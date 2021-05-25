@@ -1,21 +1,15 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Aqui começa sua história
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Aqui começa sua história
+subheading: This is a digital research laboratory. It’s where we examine new technologies and figure out what works and what doesn’t.
 mainpitch:
-  title: Why Kaldi
+  title: Aqui começa nossa história
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    This is a digital research laboratory. It’s where we examine new technologies and figure out what works and what doesn’t.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  This is a digital research laboratory. It’s where we examine new technologies and figure out what works and what doesn’t
 intro:
   blurbs:
     - image: /img/coffee.png

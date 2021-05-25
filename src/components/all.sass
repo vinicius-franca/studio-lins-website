@@ -1,17 +1,22 @@
+
+
+@import "~bulma"
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
-$black: #2b2523
+$primary: #F8F0E6
+$primary-invert: #16533B
+$body-color: #FFF4EB
+$black: #10130C
+
+body
+  backgorund-color: $body-color
 
 .navbar .navbar-menu
   box-shadow:none !important
+  height: 78px
 
 .content .taglist
   list-style: none
@@ -31,7 +36,7 @@ $black: #2b2523
 // Helper Classes
 .full-width-image-container
   width: 100vw
-  height: 400px
+  height: 680px
   position: relative
   left: 50%
   right: 50%
@@ -44,7 +49,7 @@ $black: #2b2523
 
 .full-width-image
     width: 100vw
-    height: 400px
+    height: 680px
     background-size: cover
     background-position: bottom
     display: flex
@@ -79,19 +84,19 @@ $black: #2b2523
   height: 1.5rem
   fill: currentColor
 .navbar-brand .navbar-item.logo
-  padding: 0 1rem
+  padding: 0
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
 
 //Menu overrides
-$menu-item-color: $white-ter
+$menu-item-color: $white-ter !important
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
-$menu-label-color: $white-ter
+$menu-item-active-color: $primary-invert !important
+$menu-item-active-background-color:	$primary-invert !important
+$menu-list-border-left: 1px solid $primary-invert
+$menu-label-color: $white-ter !important
 
 
 .menu-label
@@ -122,10 +127,10 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
+.navbar
+  background-color: $primary-invert !important
 
-@import "~bulma"
-
-
+  
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
