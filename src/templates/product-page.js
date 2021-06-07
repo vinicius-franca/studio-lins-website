@@ -19,7 +19,7 @@ export const ProductPageTemplate = ({
   pricing,
 }) => (
   <div className="content">
-    <div
+    {/* <div
       className="full-width-image-container margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -38,27 +38,27 @@ export const ProductPageTemplate = ({
       >
         {title}
       </h2>
-    </div>
+    </div> */}
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-7 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
+              <h3 className="has-text-weight-semibold is-size-2">Portfolio</h3>
+              {/* <p>{description}</p> */}
             </div>
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
+              {/* <Features gridItems={intro.blurbs} /> */}
+              {/* <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
                 </div>
-              </div>
+              </div> */}
               <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">

@@ -4,18 +4,21 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
 
 $primary: #F8F0E6
 $primary-invert: #16533B
 $body-color: #FFF4EB
 $black: #10130C
+$family-primary: "Gotham", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 
 body
   backgorund-color: $body-color
+  font-family: $family-primary !important
+
+.navbar
+  background-color: transparent !important
 
 .navbar .navbar-menu
-  box-shadow:none !important
   height: 78px
 
 .content .taglist
@@ -57,6 +60,7 @@ body
     align-items: center
 
 .btn
+    background: #16533B
     display: inline-block
     padding: 12px 16px 10px
     font-size: 18px
@@ -66,10 +70,8 @@ body
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: #FFFFFF
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -79,24 +81,26 @@ body
 .navbar-item .icon
   color: $primary
 // Override for use of svg's from https://simpleicons.org/
+
 .icon svg
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
+
 .navbar-brand .navbar-item.logo
   padding: 0
+
+.navbar-brand .navbar-item.logo img 
+  max-height: none
+  width: 165px
+
+footer
+  background-color: #4B2C20
+
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
 
-//Menu overrides
-$menu-item-color: $white-ter !important
-$menu-item-hover-color: $black !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $primary-invert !important
-$menu-item-active-background-color:	$primary-invert !important
-$menu-list-border-left: 1px solid $primary-invert
-$menu-label-color: $white-ter !important
 
 
 .menu-label
@@ -119,27 +123,23 @@ $menu-label-color: $white-ter !important
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
-.navbar
-  background-color: $primary-invert !important
-
-  
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
 
 +mobile
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
