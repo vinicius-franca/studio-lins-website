@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Aqui começa sua história
 image: /img/rectangle-1.jpg
-heading: Portifólio
+heading: Portfólio
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Aqui começa sua história
