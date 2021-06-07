@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Aqui começa sua história
-image: /img/home-jumbotron.jpg
+image: /img/rectangle-1.jpg
 heading: Portifólio
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
