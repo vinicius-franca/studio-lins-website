@@ -49,12 +49,15 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                {/* <Testimonials testimonials={testimonials} /> */}
+                <h3 className="has-text-weight-semibold has-text-centered with-border">O que os clientes dizem?</h3>
+                <Testimonials testimonials={testimonials} />
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold with-border  has-text-centered">
                     Blog
                   </h3>
-                  <BlogRoll />
+                  <div>
+                    <BlogRoll />
+                  </div>
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Ver mais posts
