@@ -52,4 +52,7 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+testimonials:
+  - quote: '"O Melhor ensaio da minha vida'
+    author: Scarlet Johansson
 ---
