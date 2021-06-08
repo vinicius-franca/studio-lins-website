@@ -15,7 +15,7 @@ const Footer = class extends React.Component {
             <div style={{ maxWidth: '100vw' }} className="columns">
               <div className="column is-4">
                 <section>
-                  <h4 classNAme="has-text-white-ter is-uppercase">Contato</h4>
+                  <h4 className="has-text-white-ter is-uppercase">Contato</h4>
                   <a href="mailto:falecom@studiolinsfotografia.com.br">falecom@studiolinsfotografia.com.br</a>
                   <p>+55 11 3333-3333</p>
                 </section>
@@ -32,7 +32,7 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <h4 classNAme="has-text-white-ter is-uppercase">Redes Sociais</h4>
+                <h4 className="has-text-white-ter is-uppercase">Redes Sociais</h4>
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
