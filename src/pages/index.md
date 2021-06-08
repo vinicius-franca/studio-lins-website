@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Aqui começa sua história
+title: Página Inicial
 image: /img/rectangle-1.jpg
 heading: Portfólio
-subheading: Support sustainable farming while enjoying a cup
+subheading: Portfólio de ensaios realizados pelo Studio Lins Fotografia
 mainpitch:
   title: Aqui começa sua história
   description: >
@@ -37,7 +37,7 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: Portfolio
+  heading: Portfólio
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
