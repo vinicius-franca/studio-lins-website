@@ -3,13 +3,16 @@ import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
+
   constructor(props) {
+
     super(props)
     this.state = {
       active: false,
       navBarActiveClass: '',
     }
   }
+
 
   toggleHamburger = () => {
     // toggle the active boolean in the state
@@ -30,11 +33,20 @@ const Navbar = class extends React.Component {
       }
     )
   }
+  componentDidMount = () => {
+    window.addEventListener('scroll', () => {
+       let activeClass = 'is-primary';
+       if(window.scrollY <= 680){
+           activeClass = 'is-transparent';
+       }
+       this.setState({ activeClass });
+    });
+  }
 
   render() {
     return (
       <nav
-        className="navbar is-transparent is-fixed-top"
+        className={`navbar is-fixed-top is-transparent ${this.state.activeClass}`}
         role="navigation"
         aria-label="main-navigation"
       >
@@ -78,8 +90,8 @@ const Navbar = class extends React.Component {
                 Formularios (exemplo)
               </Link>
             </div>
-            <div className="navbar-end has-text-centered">
-            </div>
+            {/* <div className="navbar-end has-text-centered">
+            </div> */}
           </div>
         </div>
       </nav>

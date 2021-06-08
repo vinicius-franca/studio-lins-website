@@ -5,21 +5,46 @@
 
 // Config vars
 
-$primary: #F8F0E6
-$primary-invert: #16533B
-$body-color: #FFF4EB
+$primary: #4C2C21
+$body-background-color: #FFF4EB
 $black: #10130C
 $family-primary: "Gotham", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 
 body
-  backgorund-color: $body-color
   font-family: $family-primary !important
 
+h3.with-border
+  color: $primary
+  font-size: 28px
+  position: relative
+  padding-bottom: 16px
+  text-transform: uppercase
+
+h3.with-border:after
+  content: ""
+  width: 90px
+  height: 3px
+  background-color: $primary
+  bottom: 0
+  left: 50%
+  margin-left: -45px
+  position: absolute
+
 .navbar
-  background-color: transparent !important
+  animation: background-color linear 3s
+  text-transform: uppercase
+
+.navbar.is-transparent
+  background-color: transparent
+
+.navbar.is-primary
+  background-color: $primary
 
 .navbar .navbar-menu
   height: 78px
+
+.navbar .navbar-menu .navbar-item
+  color: $primary-invert !important
 
 .content .taglist
   list-style: none
@@ -59,21 +84,26 @@ body
     justify-content: center
     align-items: center
 
+.portfolio
+  width: 100vw
+  padding-left: 0
+  padding-right: 0
+
 .btn
-    background: #16533B
+    background: none
     display: inline-block
     padding: 12px 16px 10px
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
     border-radius: .25rem
     text-decoration: none
-    font-weight: 700
-    color: #FFFFFF
+    color: $primary
+    border: solid 1px $primary
     text-align: center
     -webkit-transition: all .15s ease
     transition: all .15s ease
+    text-transform: uppercase
 
 .margin-top-0
   margin-top: 0 !important
@@ -90,46 +120,37 @@ body
 .navbar-brand .navbar-item.logo
   padding: 0
 
-.navbar-brand .navbar-item.logo img 
+.navbar-brand .navbar-item.logo img
   max-height: none
   width: 165px
 
-footer
-  background-color: #4B2C20
-
 footer.footer
   padding: 3rem 0rem 0rem
-  background-color: transparent
+  background-color: $primary
 
-
-
-.menu-label
-  font-size: 1em !important
-  text-align: left
-.menu-list
-  list-style: none !important
-  text-align: left
-.social
-  padding: 2em
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em
-    background-color: $white-ter
     margin: .5em
-    width: 1em
-    height: 1em
+    width: 32px
+    height: 32px
     vertical-align: middle
     display: inline
 
 // blog roll
-.blog-list-item.is-featured
-  background-color: #d6400033
+.blog-list
+  display: flex
+  flex-wrap: wrap
+
+.blog-list-item:nth-child(1)
+  flex: 0 1 100%
+.blog-list-item
+  flex: 0 1 50%
 .blog-list-item header
   display: flex
-  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%
-  margin: 0 1.5em 0 0
+  flex-basis: 100%
+  margin: 0 0 0 0
 
 // responsiveness
 +tablet-only

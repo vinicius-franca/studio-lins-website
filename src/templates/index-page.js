@@ -5,15 +5,14 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Testimonials from '../components/Testimonials'
 
 export const IndexPageTemplate = ({
   image,
-  title,
   heading,
-  subheading,
-  mainpitch,
   description,
   intro,
+  testimonials
 }) => (
   <div>
     <div
@@ -27,44 +26,40 @@ export const IndexPageTemplate = ({
       }}
     >
     </div>
+    <section className="section section--gradient portfolio">
+      <div className="columns">
+        <div className="column is-12">
+          <h3 className="has-text-weight-semibold has-text-centered with-border">
+            {heading}
+          </h3>
+        </div>
+      </div>
+      <Features gridItems={intro.blurbs} />
+      <div className="columns">
+        <div className="column is-12 has-text-centered">
+          <Link className="btn" to="/portfolio">
+            Ver mais
+          </Link>
+        </div>
+      </div>
+    </section>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
+        <div className="section pt-0">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
+                <div>
+                  {/* <Testimonials testimonials={testimonials} /> */}
                 </div>
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
+                  <h3 className="has-text-weight-semibold with-border  has-text-centered">
                     Blog
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
-                      Ver mais
+                      Ver mais posts
                     </Link>
                   </div>
                 </div>
@@ -82,8 +77,8 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
   description: PropTypes.string,
+  testimonials: PropTypes.array,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -99,9 +94,9 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        testimonials={frontmatter.testimonials}
       />
     </Layout>
   )
@@ -131,9 +126,9 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
-          description
+        testimonials {
+          author
+          quote
         }
         description
         intro {
