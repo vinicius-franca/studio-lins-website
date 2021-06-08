@@ -30,8 +30,6 @@ intro:
         to fall in love with in our shop.
     - image: /img/lins-135-.jpg
       text: Teste
-    - image: /img/home-jumbotron.jpg
-      text: teste
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
