@@ -1,6 +1,6 @@
 ---
 templateKey: 'product-page'
-path: /products
+path: /portfolio
 title: Our Coffee
 image: /img/jumbotron.jpg
 heading: Great coffee with a conscience
@@ -10,7 +10,7 @@ description: >-
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 intro:
-  blurbs:
+  albums:
     - image: /img/coffee.png
       text: >
         We sell green and roasted coffee beans that are sourced directly from

@@ -14,7 +14,7 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 intro:
-  blurbs:
+  albums:
     - image: /img/coffee.png
       text: >
         We sell green and roasted coffee beans that are sourced directly from

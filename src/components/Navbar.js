@@ -46,13 +46,13 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className={`navbar is-fixed-top is-transparent ${this.state.activeClass}`}
+        className={`navbar is-fixed-top ${this.state.activeClass}`}
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item logo" title="Studio Lins">
+            <Link to="/" className="logo" title="Studio Lins">
               <img src={logo} alt="Studio Lins" />
             </Link>
             {/* Hamburger menu */}

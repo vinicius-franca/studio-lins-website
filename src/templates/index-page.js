@@ -34,7 +34,7 @@ export const IndexPageTemplate = ({
           </h3>
         </div>
       </div>
-      <Features gridItems={intro.blurbs} />
+      <Features gridItems={intro.albums} />
       <div className="columns">
         <div className="column is-12 has-text-centered">
           <Link className="btn" to="/portfolio">
@@ -80,7 +80,7 @@ IndexPageTemplate.propTypes = {
   description: PropTypes.string,
   testimonials: PropTypes.array,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+    albums: PropTypes.array,
   }),
 }
 
@@ -124,18 +124,15 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
-        subheading
         testimonials {
           author
           quote
         }
-        description
         intro {
-          blurbs {
+          albums {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 780, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

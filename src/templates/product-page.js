@@ -44,13 +44,13 @@ export const ProductPageTemplate = ({
         <div className="section">
           <div className="columns">
             <div className="column is-7 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2">Portfolio</h3>
+              <h3 className="has-text-weight-semibold is-size-2">Portfólio</h3>
               {/* <p>{description}</p> */}
             </div>
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              {/* <Features gridItems={intro.blurbs} /> */}
+              {/* <Features gridItems={intro.albums} /> */}
               {/* <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
@@ -110,7 +110,7 @@ ProductPageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+    albums: PropTypes.array,
   }),
   main: PropTypes.shape({
     heading: PropTypes.string,
@@ -173,7 +173,7 @@ export const productPageQuery = graphql`
         heading
         description
         intro {
-          blurbs {
+          albums {
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
