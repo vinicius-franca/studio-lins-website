@@ -12,9 +12,8 @@ class BlogRoll extends React.Component {
       <div className="columns is-12 is-multiline blog-list">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="blog-list-item">
-              <article
-                key={post.id} className={` tile is-child box notification ${
+            <div className="blog-list-item" key={post.id}>
+              <article className={` tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >

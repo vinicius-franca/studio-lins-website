@@ -49,9 +49,7 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div>
-                  {/* <Testimonials testimonials={testimonials} /> */}
-                </div>
+                {/* <Testimonials testimonials={testimonials} /> */}
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold with-border  has-text-centered">
                     Blog
@@ -116,6 +114,7 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
+        heading
         title
         image {
           childImageSharp {
