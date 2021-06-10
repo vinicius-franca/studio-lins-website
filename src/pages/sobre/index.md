@@ -1,7 +1,12 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /sobre
 title: Sobre Nós
+image: /img/home-jumbotron.jpg
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Fotografia
+
+###### é um investimento em suas memórias.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi lectus, feugiat ac auctor vel, ullamcorper ac tellus. Quisque euismod at nunc at sollicitudin. Aliquam vel ante nisl. Nunc quis tellus eget ante vestibulum facilisis eget feugiat diam. Suspendisse dolor urna, scelerisque non tellus vel, scelerisque finibus nisi. Pellentesque egestas neque sed leo venenatis varius. Nulla iaculis porttitor viverra. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi lectus, feugiat ac auctor vel, ullamcorper ac tellus. Quisque euismod at nunc at sollicitudin. Aliquam vel ante nisl. Nunc quis tellus eget ante vestibulum facilisis eget feugiat diam. Suspendisse dolor urna, scelerisque non tellus vel, scelerisque finibus nisi. Pellentesque egestas neque sed leo venenatis varius. Nulla iaculis porttitor viverra.
