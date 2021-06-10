@@ -5,6 +5,7 @@ module.exports = {
       'O Studio Lins Fotografia é o que você precisa para eternizar os seus momentos...',
   },
   plugins: [
+    `gatsby-plugin-image`,
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-sass',

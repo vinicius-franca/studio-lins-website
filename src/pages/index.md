@@ -55,4 +55,5 @@ main:
 testimonials:
   - quote: '"O Melhor ensaio da minha vida'
     author: Scarlet Johansson
+  - image: /img/products-grid1.jpg
 ---

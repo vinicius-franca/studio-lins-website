@@ -10,7 +10,6 @@ import Testimonials from '../components/Testimonials'
 export const IndexPageTemplate = ({
   image,
   heading,
-  description,
   intro,
   testimonials
 }) => (
@@ -49,7 +48,7 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <h3 className="has-text-weight-semibold has-text-centered with-border">O que os clientes dizem?</h3>
+                <h3 className="has-text-weight-semibold with-border">O que os clientes dizem?</h3>
                 <Testimonials testimonials={testimonials} />
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold with-border  has-text-centered">
@@ -121,7 +120,7 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxWidth: 2048, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -129,12 +128,19 @@ export const pageQuery = graphql`
         testimonials {
           author
           quote
+          image {
+            childImageSharp {
+              fluid(maxWidth: 780, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         intro {
           albums {
             image {
               childImageSharp {
-                fluid(maxWidth: 780, quality: 100) {
+                fluid(maxWidth: 780, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }
