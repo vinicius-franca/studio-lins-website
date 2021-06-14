@@ -121,17 +121,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        testimonials {
-          author
-          quote
-          image {
-            childImageSharp {
-              fluid(maxWidth: 780, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
         intro {
           albums {
             image {
@@ -145,6 +134,17 @@ export const pageQuery = graphql`
           }
           heading
           description
+        }
+        testimonials {
+          author
+          quote
+          image {
+            childImageSharp {
+              fluid(maxWidth: 780, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
