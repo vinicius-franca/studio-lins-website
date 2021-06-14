@@ -39,8 +39,6 @@ const TemplateWrapper = ({ children }) => {
           color="#ff4400"
         />
 
-        <link href={`${withPrefix('/')}/fonts/Gotham/stylesheet.css`} rel="stylesheet"></link>
-
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />

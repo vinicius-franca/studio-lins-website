@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Studio Lins Fotografia',
-    description:
-      'O Studio Lins Fotografia é o que você precisa para eternizar os seus momentos...',
+    description: 'O Studio Lins Fotografia é o que você precisa para eternizar os seus momentos...',
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -78,6 +77,12 @@ module.exports = {
         purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: 'src/utils/typography'
+      },
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
