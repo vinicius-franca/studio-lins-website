@@ -40,12 +40,11 @@ export default class Index extends React.Component {
           <div className="container">
             <div className="content">
               <h1>Contato</h1>
-              <form
-                name="contact"
+              <form 
                 method="post"
-                action="/contato/thanks/"
+                netlify-honeypot="bot-field"
                 data-netlify="true"
-                data-netlify-honeypot="bot-field"
+                name="contact"
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -58,7 +57,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    Nome
                   </label>
                   <div className="control">
                     <input
@@ -73,7 +72,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'email'}>
-                    Email
+                    E-mail
                   </label>
                   <div className="control">
                     <input
@@ -88,7 +87,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'message'}>
-                    Message
+                    Mensagem
                   </label>
                   <div className="control">
                     <textarea
@@ -102,7 +101,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    Send
+                    Enviar
                   </button>
                 </div>
               </form>
