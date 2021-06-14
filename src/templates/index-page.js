@@ -42,30 +42,30 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section section--gradient">
+    <section className="section has-background-grey-light">
+      <div className="container-fluid">
+        <div className="columns">
+          <div className="column is-12">
+            <h3 className="has-text-weight-semibold with-border with-border__left">O que os clientes dizem?</h3>
+            <Testimonials testimonials={testimonials} />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="section">
       <div className="container">
-        <div className="section pt-0">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold with-border">O que os clientes dizem?</h3>
-                  <Testimonials testimonials={testimonials} />
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold with-border  has-text-centered">
-                    Blog
-                  </h3>
-                  <div>
-                    <BlogRoll />
-                  </div>
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Ver mais posts
-                    </Link>
-                  </div>
-                </div>
-              </div>
+        <div className="columns">
+          <div className="column is-12">
+            <h3 className="has-text-weight-semibold with-border  has-text-centered">
+              Blog
+            </h3>
+            <div className="column is-12">
+              <BlogRoll />
+            </div>
+            <div className="column is-12 has-text-centered">
+              <Link className="btn" to="/blog">
+                Ver mais posts
+              </Link>
             </div>
           </div>
         </div>
