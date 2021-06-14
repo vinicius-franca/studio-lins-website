@@ -34,10 +34,14 @@ const Navbar = class extends React.Component {
     )
   }
   componentDidMount = () => {
+    const el1 = document.querySelector('full-width-cover')
     window.addEventListener('scroll', () => {
-       let activeClass = 'is-primary';
-       if(window.scrollY <= 680){
-           activeClass = 'is-transparent';
+       let activeClass = '';
+       if(window.scrollY <= 680 && el1){
+        activeClass = 'is-transparent';
+       }
+       else {         
+        activeClass = 'is-primary';
        }
        this.setState({ activeClass });
     });

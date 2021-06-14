@@ -14,8 +14,8 @@ export const IndexPageTemplate = ({
   testimonials
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
+    <div 
+      className="full-width-image full-width-cover margin-top-0"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -42,13 +42,10 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section has-background-grey-light">
-      <div className="container-fluid">
+    <section className="section has-background-grey-lighter">
+      <div className="container">
         <div className="columns">
-          <div className="column is-12">
-            <h3 className="has-text-weight-semibold with-border with-border__left">O que os clientes dizem?</h3>
-            <Testimonials testimonials={testimonials} />
-          </div>
+          <Testimonials testimonials={testimonials} />
         </div>
       </div>
     </section>
@@ -81,9 +78,6 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   description: PropTypes.string,
   testimonials: PropTypes.array,
-  intro: PropTypes.shape({
-    albums: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
