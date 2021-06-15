@@ -7,16 +7,16 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 const Testimonials = ({ testimonials }) => (
   <div>
     
-    <h3 className="has-text-weight-semibold with-border with-border__left">O que os clientes dizem?</h3>
-    <div class="columns">
+    <h3 className="size-5 with-border with-border__left">O que os clientes dizem?</h3>
+    <div className="columns">
       {testimonials.map((testimonial) => (
       <div className="column is-6">
         <article key={v4()} className="columns">
           <div className="column is-2">
             {testimonial.image ? (
-              <div className="image is-128x128">
+              <div className="image">
                 <PreviewCompatibleImage
-                  imageInfo={{ image: testimonial.image, alt: `${testimonial.author}`, style: { borderRadius: '100%'} }}
+                  imageInfo={{ image: testimonial.image, alt: `${testimonial.author}`}}
                 />
               </div>
             ) : null}
