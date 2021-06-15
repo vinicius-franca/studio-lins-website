@@ -7,7 +7,7 @@ const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-gapless portfolio-roll">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-4 portfolio-item">
-        <Link to={item.link}>
+        <Link to={`${item.link}`}>
           <PreviewCompatibleImage imageInfo={item} />
           <span className="portfolio-title has-text-white is-size-5">{item.text}</span>
         </Link>

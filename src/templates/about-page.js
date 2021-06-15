@@ -27,15 +27,10 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
             <div className="column is-6">
               <div className="section">
                 <PageContent className="content" content={content} />
-                <div class="has-text-centered">
-                  <Link className="btn" to="/portfolio">
-                    Visitar Portfólio
-                  </Link>
-                </div>
               </div>
             </div>
             <div className="column is-6">
-              <div style={{
+              <div class="box notify" style={{
                 backgroundImage: `url(${
                   !!image.childImageSharp ? image.childImageSharp.fluid.src : image
                 })`,
@@ -46,9 +41,9 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
               }}></div>
             </div>
           </div>
-          <div className="columns">
+          <div className="columns" style={{ marginTop: '50px' }}>
             <div className="column is-12 has-text-centered">
-              <h2 className="mt-3 is-size-3">Quer viver essa experiência com a gente? Entre em contato <Link to="/contato">AQUI!</Link></h2>
+              <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <Link to="/contato">AQUI!</Link></h2>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery, Link } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class PortfolioRoll extends React.Component {
@@ -13,19 +13,31 @@ class PortfolioRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className="portfolio-list-item" key={post.id}>
-              <article className={` tile is-child box notification`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{ image: post.frontmatter.featuredimage, alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                </header>
-              </article>
+              <Link to={post.fields.slug}>
+                <article className={` tile is-child box notification ${
+                    post.frontmatter.featuredpost ? 'is-featured' : ''
+                  }`}
+                  >
+                  <header>
+                    {post.frontmatter.featuredimage ? (
+                      <div className="featured-thumbnail">
+                        <PreviewCompatibleImage
+                          imageInfo={{ image: post.frontmatter.featuredimage, alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                          }}
+                        />
+                        <div class="featured-thumbnail-overlay">
+                          <div>
+                            <h3 class="has-text-white is-size-4">{post.frontmatter.title}</h3>
+                            <span className="has-text-white is-size-5 is-block">
+                              &#8226;  {post.frontmatter.date} &#8226;
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    ) : null}
+                  </header>
+                </article>
+              </Link>
             </div>
           ))}
       </div>
