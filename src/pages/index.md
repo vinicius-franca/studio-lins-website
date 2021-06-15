@@ -25,10 +25,13 @@ intro:
   blurbs:
     - image: /img/coffee.png
       text: Company
-    - image: /img/frame-2788.png
+      link: /portfolio/tags/company
+    - image: /img/rectangle-39275.jpg
       text: Casais
+      link: /portfolio/tags/casais
     - image: /img/lins-216-.jpg
       text: Infantil
+      link: /portfolio/tags/infantil
 main:
   heading: Portfólio
   description: >
