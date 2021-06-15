@@ -14,7 +14,7 @@ $family-primary: "Gotham Book", "Helvetica Neue", "Helvetica", "Arial", sans-ser
   font-family: $family-primary !important **/
 
 h3.with-border
-  color: $primary
+  color: $black
   font-size: 28px
   position: relative
   padding-bottom: 16px
@@ -154,8 +154,6 @@ footer.footer
     display: inline
 
 // blog roll
-
-
 .blog-list
   display: flex
   flex-wrap: wrap
@@ -170,6 +168,14 @@ footer.footer
   display: flex
 .blog-list-item .notification
   padding: 0.5rem
+
+// portfolio roll
+.portfolio-list
+  display: flex
+  flex-wrap: wrap
+
+.blog-list-item
+  flex: 0 1 auto
 
 // responsiveness
 +tablet-only

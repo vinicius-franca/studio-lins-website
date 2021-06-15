@@ -9,13 +9,11 @@ class PortfolioRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-12 is-multiline blog-list">
+      <div className="columns is-12 is-multiline portfolio-list">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="blog-list-item" key={post.id}>
-              <article className={` tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
+            <div className="portfolio-list-item" key={post.id}>
+              <article className={` tile is-child box notification`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
