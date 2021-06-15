@@ -7,6 +7,20 @@ mainpitch:
   description: >
     This is a digital research laboratory. It’s where we examine new
     technologies and figure out what works and what doesn’t.
+testimonials:
+  - quote: '"O Melhor ensaio da minha vida com certeza tivemos uma experiência
+      excelente."'
+    author: Otavio Augusto
+    image: /img/coffee.png
+  - image: /img/mask-group.jpg
+    quote: '"Trabalho excepcional, total comprometimento e responsabilidade."'
+    author: Luisa Neris
+title: Página Inicial
+image: /img/rectangle-1.jpg
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   albums:
     - image: /img/coffee.png
@@ -30,15 +44,13 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-testimonials:
-  - quote: '"O Melhor ensaio da minha vida com certeza tivemos uma experiência
-      excelente."'
-    author: Otavio Augusto
-    image: /img/coffee.png
-  - image: /img/mask-group.jpg
-    quote: '"Trabalho excepcional, total comprometimento e responsabilidade."'
-    author: Luisa Neris
-title: Página Inicial
+  blurbs:
+    - image: /img/coffee.png
+      text: Company
+    - image: /img/frame-2788.png
+      text: Casais
+    - image: /img/lins-216-.jpg
+      text: Infantil
 main:
   heading: Portfólio
   description: >
@@ -55,9 +67,4 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-image: /img/rectangle-1.jpg
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
 ---
