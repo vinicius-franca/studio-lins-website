@@ -3,6 +3,7 @@ templateKey: portfolio-post
 title: Ensaio Karina e Eduardo
 date: 2021-06-14T21:59:41.685Z
 description: Teste teste teste
+featuredpost: true
 featuredimage: /img/rectangle-39275.jpg
 tags:
   - Casamento
