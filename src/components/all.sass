@@ -10,8 +10,8 @@ $body-background-color: #FFF4EB
 $black: #10130C
 $family-primary: "Gotham Book", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 
-/** body
-  font-family: $family-primary !important **/
+body
+  font-family: $family-primary !important
 
 h3.with-border
   color: $black
@@ -45,22 +45,38 @@ h3.with-border__left:after
 .navbar.is-primary
   background-color: $primary
 
-.navbar .navbar-menu
-  height: 78px
-
 .navbar .navbar-menu .navbar-item
   color: $primary-invert !important
   padding:  0.5rem 1.5rem
   text-transform: capitalize
   border-bottom: solid 0px #fff
-  transition: all ease-in 0.3s
+  transition: all ease 0.15s
 
 .navbar .navbar-menu .navbar-item:focus,
 .navbar .navbar-menu .navbar-item:hover,
 .navbar .navbar-menu .navbar-item.is-active
   background-color: transparent !important
   border-bottom: solid 2px #fff
+  font-weight: bold
 
+.navbar-item .icon
+  color: $primary
+// Override for use of svg's from https://simpleicons.org/
+
+.icon svg
+  width: 1.5rem
+  height: 1.5rem
+  fill: currentColor
+
+.navbar-brand
+  padding-top: 8px
+.navbar-brand .navbar-item.logo
+  padding: 0
+.navbar-brand .navbar-item.logo img
+  max-height: none
+  width: 165px
+
+// Tag List
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -126,33 +142,13 @@ h3.with-border__left:after
 .margin-top-0
   margin-top: 0 !important
 
-.navbar-item .icon
-  color: $primary
-// Override for use of svg's from https://simpleicons.org/
-
-.icon svg
-  width: 1.5rem
-  height: 1.5rem
-  fill: currentColor
-
-.navbar-brand
-  padding-top: 8px
-.navbar-brand .navbar-item.logo
-  padding: 0
-.navbar-brand .navbar-item.logo img
-  max-height: none
-  width: 165px
-
+// Footer
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: $primary
 
-.social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    margin: .5em
-    width: 32px
-    height: 32px
+  .social a
+    margin: .10em .5em
     vertical-align: middle
     display: inline
 
@@ -210,5 +206,8 @@ footer.footer
     flex-basis: 50%
 
 +mobile
+  .navbar
+    background-color: $primary
+
   .blog-list-item header
     display: block

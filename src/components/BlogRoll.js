@@ -29,7 +29,7 @@ class BlogRoll extends React.Component {
                           <div>
                             <h3 class="has-text-white is-size-4">{post.frontmatter.title}</h3>
                             <span className="has-text-white is-size-5 is-block">
-                              {post.frontmatter.date}
+                              &#8226;  {post.frontmatter.date} &#8226;
                             </span>
                           </div>
                         </div>
