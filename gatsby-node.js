@@ -83,5 +83,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+    node.collection = getNode(node.parent).sourceInstanceName;
   }
 }

@@ -5,30 +5,30 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 
 const Testimonials = ({ testimonials }) => (
-  <div class="columns">
-    <div className="column is-12">
-      <h3 className="has-text-weight-semibold with-border with-border__left">O que os clientes dizem?</h3>
-    </div>
-    <div className="column is-12">
-    {testimonials.map((testimonial) => (
-      <article key={v4()} className="columns">
-        <div className="column is-2">
-          {testimonial.image ? (
-            <div className="featured-thumbnail">
-              <PreviewCompatibleImage
-                imageInfo={{ image: testimonial.image, alt: `${testimonial.author}`,
-                }}
-              />
-            </div>
-          ) : null}
-        </div>
-        <div className="column is-10">
-          <i>{testimonial.quote}</i>
-          <br />
-          <strong> – {testimonial.author}</strong>
-        </div>
-      </article>
-    ))}
+  <div>
+    
+    <h3 className="has-text-weight-semibold with-border with-border__left">O que os clientes dizem?</h3>
+    <div class="columns">
+      {testimonials.map((testimonial) => (
+      <div className="column is-6">
+        <article key={v4()} className="columns">
+          <div className="column is-2">
+            {testimonial.image ? (
+              <div className="image is-128x128">
+                <PreviewCompatibleImage
+                  imageInfo={{ image: testimonial.image, alt: `${testimonial.author}`, style: { borderRadius: '100%'} }}
+                />
+              </div>
+            ) : null}
+          </div>
+          <div className="column is-10">
+            <i>{testimonial.quote}</i>
+            <br />
+            <strong> – {testimonial.author}</strong>
+          </div>
+        </article>
+      </div>
+      ))}
     </div>
   </div>
 )

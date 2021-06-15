@@ -22,11 +22,9 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
       </div>
       <section className="section section--gradient">
         <div className="container">
+          <h3 className="has-text-weight-semibold has-text-centered with-border">{title}</h3>
           <div className="columns">
-            <div className="column is-10 is offset-1">
-              <h3 className="has-text-weight-semibold has-text-centered with-border">{title}</h3>
-            </div>
-            <div className="column is-10 is-offset-1">
+            <div className="column is-12">
               <div className="section">
                 <PageContent className="content" content={content} />
               </div>

@@ -10,9 +10,8 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer className="footer has-text-white-ter">
-        <div className="content has-text-white-ter">
-          <div className="container has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
+        <div className="container has-text-white-ter">
+            <div className="columns">
               <div className="column is-4">
                 <section>
                   <h4 className="has-text-white-ter is-uppercase">Contato</h4>
@@ -65,7 +64,6 @@ const Footer = class extends React.Component {
               </div>
             </div>
           </div>
-        </div>
       </footer>
     )
   }

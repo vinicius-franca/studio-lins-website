@@ -49,7 +49,7 @@ export default () => (
       query PortfolioRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "portfolio-post" } } }
         ) {
           edges {
             node {
