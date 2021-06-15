@@ -3,21 +3,11 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-gapless">
+  <div className="columns is-gapless portfolio-roll">
     {gridItems.map((item) => (
-      <div key={item.text} className="column is-4">
-        <section className="section p-0">
-          <div className="has-text-centered">
-            <div
-              style={{
-                width: '100%',
-              }}
-            >
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
-          </div>
-          {/* <p>{item.text}</p> */}
-        </section>
+      <div key={item.text} className="column is-4 portfolio-item">
+        <PreviewCompatibleImage imageInfo={item} />
+        <span className="portfolio-title has-text-white is-size-5">{item.text}</span>
       </div>
     ))}
   </div>

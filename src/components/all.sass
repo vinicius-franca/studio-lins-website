@@ -57,7 +57,6 @@ h3.with-border__left:after
 .navbar .navbar-menu .navbar-item.is-active
   background-color: transparent !important
   border-bottom: solid 2px #fff
-  font-weight: bold
 
 .navbar-item .icon
   color: $primary
@@ -107,17 +106,26 @@ h3.with-border__left:after
   align-items: center
 
 .full-width-image
-    width: 100vw
-    height: 680px
-    background-size: cover
-    background-position: bottom
-    display: flex
-    justify-content: center
-    align-items: center
+  width: 100vw
+  height: 680px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
 
 .portfolio
   width: 100vw
   padding: 40px 0
+
+.portfolio-roll .portfolio-item
+  position: relative
+
+.portfolio-roll .portfolio-item .portfolio-title
+  position: absolute
+  bottom: 10px
+  left: 10px
+
 
 .btn
   background: none
@@ -148,9 +156,9 @@ footer.footer
   background-color: $primary
 
   .social a
-    margin: .10em .5em
+    margin: 1em .5em
     vertical-align: middle
-    display: inline
+    float: left
 
 // blog roll
 .blog-list
