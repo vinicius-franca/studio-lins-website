@@ -5,7 +5,7 @@ date: 2021-06-07T18:35:10.279Z
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id
   quam pulvinar, porta lectus vitae, venenatis metus. Maecenas elementum posuere
   hendrerit. "
-featuredpost: true
+featuredpost: false
 featuredimage: /img/lins-216-.jpg
 ---
 <!--StartFragment-->
