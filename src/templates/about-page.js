@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -24,10 +24,31 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
         <div className="container">
           <h3 className="has-text-weight-semibold has-text-centered with-border">{title}</h3>
           <div className="columns">
-            <div className="column is-12">
+            <div className="column is-6">
               <div className="section">
                 <PageContent className="content" content={content} />
+                <div class="has-text-centered">
+                  <Link className="btn" to="/portfolio">
+                    Visitar Portfólio
+                  </Link>
+                </div>
               </div>
+            </div>
+            <div className="column is-6">
+              <div style={{
+                backgroundImage: `url(${
+                  !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+                })`,
+                backgroundPosition: `top center`,
+                width:`100%`,
+                height:`100%`,
+                margin: `20px`
+              }}></div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column is-12 has-text-centered">
+              <h2 className="mt-3 is-size-3">Quer viver essa experiência com a gente? Entre em contato <Link to="/contato">AQUI!</Link></h2>
             </div>
           </div>
         </div>

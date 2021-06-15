@@ -5,6 +5,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-sass',
@@ -34,8 +36,6 @@ module.exports = {
         name: 'images',
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -70,13 +70,7 @@ module.exports = {
         develop: true, // Activates purging in npm run develop
         purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
       },
-    }, // must be after other CSS plugins
-    /* {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: 'src/utils/typography'
-      },
-    }, */
+    },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

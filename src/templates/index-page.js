@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { Link, graphql, withAssetPrefix } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import Testimonials from '../components/Testimonials'
+
+import imgInstagram from '../img/instagram.png'
 
 export const IndexPageTemplate = ({
   image,
@@ -14,7 +16,7 @@ export const IndexPageTemplate = ({
   testimonials
 }) => (
   <div>
-    <div 
+    <div
       className="full-width-image full-width-cover margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -33,7 +35,7 @@ export const IndexPageTemplate = ({
           </h3>
         </div>
       </div>
-      <Features gridItems={intro.albums} />
+      <Features gridItems={intro.blurbs} />
       <div className="columns">
         <div className="column is-12 has-text-centered">
           <Link className="btn" to="/portfolio">
@@ -68,6 +70,20 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
+    <section className="section">
+      <div className="container-fluid">
+        <div className="columns">
+          <div className="column is-12">
+            <h3 className="has-text-weight-semibold with-border  has-text-centered">
+              Instagram
+            </h3>
+            <div className="column is-12">
+              <img src={imgInstagram} alt="instagram feed" className="is-fluid" style={{width: '100%'}} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 )
 
@@ -77,6 +93,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   description: PropTypes.string,
+  intro: PropTypes.array,
   testimonials: PropTypes.array,
 }
 
@@ -122,7 +139,7 @@ export const pageQuery = graphql`
           }
         }
         intro {
-          albums {
+          blurbs {
             image {
               childImageSharp {
                 fluid(maxWidth: 780, quality: 80) {
@@ -132,8 +149,6 @@ export const pageQuery = graphql`
             }
             text
           }
-          heading
-          description
         }
         testimonials {
           author
