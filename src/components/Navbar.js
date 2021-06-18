@@ -50,7 +50,7 @@ const Navbar = class extends React.Component {
   handleScroll = () => {
     window.addEventListener("scroll", this.handleScroll);
     const imageHeader = document.querySelector(".full-width-image");
-    
+
     if(!imageHeader) {
       document.querySelector(".navbar").className = "navbar is-fixed-top  is-primary";
     }
@@ -96,9 +96,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/sobre">
                 Sobre
               </Link>
-              <Link className="navbar-item" to="/">
+              {/* <Link className="navbar-item" to="/">
                 Como funciona?
-              </Link>
+              </Link> */}
               <Link className="navbar-item" to="/portfolio">
                 Portfólio
               </Link>
@@ -108,9 +108,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contato">
                 Contato
               </Link>
-              <Link className="navbar-item" to="/">
+              {/* <Link className="navbar-item" to="/">
                 F.A.Q
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
