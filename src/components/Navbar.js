@@ -10,6 +10,7 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
+      activeClass: 'is-transparent'
     }
   }
 
@@ -38,7 +39,7 @@ const Navbar = class extends React.Component {
     let activeClass = 'is-transparent';
 
     window.addEventListener('scroll', () => {
-       if(window.scrollY <= 680 && el1){
+       if((window.scrollY <= 680 && el1) || (window.scrollY === 0 && el1)){
         activeClass = 'is-transparent';
        }
        else {
@@ -98,8 +99,6 @@ const Navbar = class extends React.Component {
                 F.A.Q
               </Link>
             </div>
-            {/* <div className="navbar-end has-text-centered">
-            </div> */}
           </div>
         </div>
       </nav>

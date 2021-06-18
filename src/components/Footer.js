@@ -25,7 +25,7 @@ const Footer = class extends React.Component {
                   <img
                     src={logo}
                     alt="Studio Lins Fotografia"
-                    style={{ width: '14em', height: '10em' }}
+                    style={{ width: '14em', }}
                   />
                 </div>
                 </section>
