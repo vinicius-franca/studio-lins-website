@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import Testimonials from '../components/Testimonials'
+import arrowDown from '../img/arrow-down.svg'
 
 import imgInstagram from '../img/instagram.png'
 
@@ -26,6 +27,9 @@ export const IndexPageTemplate = ({
         backgroundAttachment: `fixed`,
       }}
     >
+      <button type="button" class="bs__arrow">
+        <img src={ arrowDown } alt="Role para baixo" />
+      </button>
     </div>
     <section className="section section--gradient portfolio">
       <div className="columns">
