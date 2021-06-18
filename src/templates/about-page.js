@@ -30,7 +30,7 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
               </div>
             </div>
             <div className="column is-6">
-              <div class="box notify" style={{
+              <div className="box notify" style={{
                 backgroundImage: `url(${
                   !!image.childImageSharp ? image.childImageSharp.fluid.src : image
                 })`,
@@ -56,7 +56,7 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
 }
 
 const AboutPage = ({ data }) => {

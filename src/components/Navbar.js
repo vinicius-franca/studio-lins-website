@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
+  
 
   constructor(props) {
 
@@ -34,25 +35,37 @@ const Navbar = class extends React.Component {
       }
     )
   }
-  componentDidMount = () => {
-    const el1 = document.querySelector('full-width-cover')
-    let activeClass = 'is-transparent';
-
-    window.addEventListener('scroll', () => {
-       if((window.scrollY <= 680 && el1) || (window.scrollY === 0 && el1)){
-        activeClass = 'is-transparent';
-       }
-       else {
-        activeClass = 'is-primary';
-       }
-       this.setState({ activeClass });
-    });
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+    const imageHeader = document.querySelector(".full-width-image");
+    if (!imageHeader) {
+      document.querySelector(".navbar").className = "navbar is-fixed-top  is-primary";
+    }
   }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    window.addEventListener("scroll", this.handleScroll);
+    const imageHeader = document.querySelector(".full-width-image");
+    
+    if(!imageHeader) {
+      document.querySelector(".navbar").className = "navbar is-fixed-top  is-primary";
+    }
+    else if (window.scrollY > 580) {
+      document.querySelector(".navbar").className = "navbar is-fixed-top  is-primary";
+    }
+    else {
+      document.querySelector(".navbar").className = "navbar is-fixed-top is-transparent";
+    }
+  };
 
   render() {
     return (
       <nav
-        className={`navbar is-fixed-top ${this.state.activeClass}`}
+        className={`navbar is-fixed-top is-transparent`}
         role="navigation"
         aria-label="main-navigation"
       >
