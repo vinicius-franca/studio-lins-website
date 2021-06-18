@@ -39,7 +39,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Categorias", name: "categories", widget: "list"}
 
   - name: "pages"
     label: "Pages"

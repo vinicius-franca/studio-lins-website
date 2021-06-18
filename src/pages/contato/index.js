@@ -20,6 +20,7 @@ export default class Index extends React.Component {
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
+  
 
   handleSubmit = (e) => {
     e.preventDefault()
@@ -28,7 +29,7 @@ export default class Index extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': form.getAttribute('name'),
+        'form-name': form.getAttribute('contact'),
         ...this.state,
       }),
     })
@@ -53,6 +54,7 @@ export default class Index extends React.Component {
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     name="contact"
+                    action="/contato/thanks/"
                   >
                     {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                     <input type="hidden" name="form-name" value="contact" />

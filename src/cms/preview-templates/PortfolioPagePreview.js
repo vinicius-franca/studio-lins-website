@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { PortfolioPostTemplate } from '../../templates/portfolio-post'
 
 const PortfolioPostPreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(['data', 'tags'])
+  const categories = entry.getIn(['data', 'categories'])
   return (
     <PortfolioPostTemplate
       content={widgetFor('body')}
       description={entry.getIn(['data', 'description'])}
-      tags={tags && tags.toJS()}
+      categories={categories && categories.toJS()}
       title={entry.getIn(['data', 'title'])}
     />
   )

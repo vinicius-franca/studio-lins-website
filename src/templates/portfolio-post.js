@@ -9,8 +9,7 @@ import Content, { HTMLContent } from '../components/Content'
 export const PortfolioPostTemplate = ({
   content,
   contentComponent,
-  description,
-  tags,
+  categories,
   title,
   helmet,
 }) => {
@@ -26,13 +25,13 @@ export const PortfolioPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <PostContent content={content} />
-            {tags && tags.length ? (
+            {categories && categories.length ? (
               <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
+                <h4>Categorias</h4>
                 <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  {categories.map((category) => (
+                    <li key={category + `categoria`}>
+                      <Link to={`/portfolio/categories/${kebabCase(category)}/`}>{category}</Link>
                     </li>
                   ))}
                 </ul>
@@ -63,7 +62,7 @@ const PortfolioPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Portfólio">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -71,7 +70,7 @@ const PortfolioPost = ({ data }) => {
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
+        categories={post.frontmatter.categories}
         title={post.frontmatter.title}
       />
     </Layout>
@@ -95,7 +94,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        tags
+        categories
       }
     }
   }

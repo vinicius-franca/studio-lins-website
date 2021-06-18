@@ -7,15 +7,8 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
-          }}
-        >
-        </div>
         <div className="columns">
-          <div className="column is-12">
+          <div className="column is-12" style={{ marginTop: '100px' }}>
             <h3 className="has-text-weight-semibold has-text-centered with-border">
               Blog
             </h3>
