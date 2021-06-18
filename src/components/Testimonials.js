@@ -7,29 +7,27 @@ import { Carousel } from 'react-responsive-carousel';
 
 
 const Testimonials = ({ testimonials }) => (
-  <div>
-      <Carousel showStatus={ false }>
-        {testimonials.map((testimonial) => (
-            <article key={v4()} className="columns is-vcentered">
-              <div className="column is-1">
-                {testimonial.image ? (
-                  <div className="image is-circle is-128x128">
-                    <PreviewCompatibleImage
-                      imageInfo={{ image: testimonial.image, alt: `${testimonial.author}`, imgStyle: { maxHeight: '200px', borderRadius: '100%'}, className: "is-rounded"}}
-                    />
-                  </div>
-                ) : null}
+  <Carousel showStatus={ false } className="testimonials" dynamicHeight={ true }>
+    {testimonials.map((testimonial) => (
+        <article key={v4()} className="is-flex is-flex-direction-row is-justify-content-center is-align-content-center is-flex-wrap-nowrap">
+          <div>
+            {testimonial.image ? (
+              <div className="image is-circle is-128x128">
+                <PreviewCompatibleImage
+                  imageInfo={{ image: testimonial.image, alt: `${testimonial.author}`, className: "is-rounded"}}
+                />
               </div>
-              <div className="column is-6 has-text-left">
-                <h3 className="size-3 with-border with-border__left">O que os clientes dizem?</h3>
-                <i className="size-5">{testimonial.quote}</i>
-                <br />
-                <strong> – {testimonial.author}</strong>
-              </div>
-            </article>
-        ))}
-      </Carousel>
-  </div>
+            ) : null}
+          </div>
+          <div className="has-text-left">
+            <h3 className="size-3 with-border with-border__left">O que os clientes dizem?</h3>
+            <i className="size-5">{testimonial.quote}</i>
+            <br />
+            <strong> – {testimonial.author}</strong>
+          </div>
+        </article>
+    ))}
+  </Carousel>
 )
 
 Testimonials.propTypes = {

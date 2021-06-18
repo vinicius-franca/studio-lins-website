@@ -49,14 +49,15 @@ h3.with-border__left:after
   color: $primary-invert !important
   padding:  0.5rem 1.5rem
   text-transform: capitalize
-  border-bottom: solid 0px #fff
-  transition: all ease 0.15s
+  font-size: 16px
+  font-weight: bold
+  height: 45px
+  margin-top: 20px
 
 .navbar .navbar-menu .navbar-item:focus,
 .navbar .navbar-menu .navbar-item:hover,
 .navbar .navbar-menu .navbar-item.is-active
   background-color: transparent !important
-  border-bottom: solid 2px #fff
 
 .navbar-item .icon
   color: $primary
@@ -126,8 +127,20 @@ h3.with-border__left:after
   bottom: 10px
   left: 10px
 
-.carousel .slide
-  text-align: left!important
+.testimonials
+  min-height: 200px
+  .carousel
+    height: 100%
+    .slide
+      text-align: left!important
+    .is-circle
+      border-radius: 100%
+      overflow: hidden
+      width: 128px
+      height: 128px
+    .image
+      margin-right: 20px
+
 
 .btn
   background: none
@@ -247,3 +260,47 @@ footer.footer
 
   .blog-list-item header
     display: block
+
+
+//Menu animation
+.cl-effect-21 a
+  text-shadow: none
+  -webkit-transition: color 0.3s
+  -moz-transition: color 0.3s
+  transition: color 0.3s
+
+  &::before, &::after
+    position: absolute
+    left: 0
+    width: 100%
+    height: 1px
+    background: #fff
+    content: ''
+    opacity: 0
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s
+    transition: opacity 0.3s, transform 0.3s
+    -webkit-transform: translateY(-10px)
+    -moz-transform: translateY(-10px)
+    transform: translateY(-10px)
+
+  &::before
+    top: 0
+    -webkit-transform: translateY(-10px)
+    -moz-transform: translateY(-10px)
+    transform: translateY(-10px)
+
+  &::after
+    bottom: 0
+    -webkit-transform: translateY(10px)
+    -moz-transform: translateY(10px)
+    transform: translateY(10px)
+
+  &:hover, &:focus
+    color: #fff
+
+  &:hover::before, &:focus::before, &:hover::after, &:focus::after
+    opacity: 1
+    -webkit-transform: translateY(0px)
+    -moz-transform: translateY(0px)
+    transform: translateY(0px)

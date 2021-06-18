@@ -106,8 +106,6 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        description={frontmatter.description}
         intro={frontmatter.intro}
         testimonials={frontmatter.testimonials}
       />
