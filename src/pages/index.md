@@ -25,15 +25,17 @@ intro:
   blurbs:
     - image: /img/coffee.png
       text: Company
-      link: /portfolio/tags/company
+      link: /portfolio/categories/company
     - image: /img/rectangle-39275.jpg
       text: Casais
-      link: /portfolio/tags/casais
+      link: /portfolio/categories/casais
     - image: /img/lins-216-.jpg
       text: Infantil
-      link: /portfolio/tags/infantil
+      link: /portfolio/categories/infantil
+  heading: Portfolio
+  description: Imagens do Portfolio
 main:
-  heading: Portfólio
+  heading: Home
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
