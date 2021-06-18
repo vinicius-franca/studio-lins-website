@@ -14,24 +14,30 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = { 
+      isValidated: false.valueOf,
+    }
   }
 
   handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value })
+    this.setState({
+      [e.target.name]: e.target.value,
+    })
   }
 
   handleSubmit = (e) => {
     e.preventDefault()
+    debugger
     const form = e.target
     fetch('/', {
       method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         'form-name': form.getAttribute('name'),
         ...this.state,
       }),
     })
-    .then(() => navigate("/contato/thanks/"))
+    .then(() => navigate("/contato/"))
     .catch(error => alert(error))
   }
 
@@ -48,7 +54,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="column is-6">
                   <form
-                    method="post"
+                    method="POST"
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     name="contact"
