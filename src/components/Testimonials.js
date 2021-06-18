@@ -8,31 +8,27 @@ import { Carousel } from 'react-responsive-carousel';
 
 const Testimonials = ({ testimonials }) => (
   <div>
-    <div className="columns">
       <Carousel showStatus={ false }>
         {testimonials.map((testimonial) => (
-          <div className="column is-12">
-            <article key={v4()} className="columns">
-              <div className="column is-6">
+            <article key={v4()} className="columns is-vcentered">
+              <div className="column is-1">
                 {testimonial.image ? (
-                  <div className="image">
+                  <div className="image is-circle is-128x128">
                     <PreviewCompatibleImage
-                      imageInfo={{ image: testimonial.image, alt: `${testimonial.author}`, className: "is-circle"}}
+                      imageInfo={{ image: testimonial.image, alt: `${testimonial.author}`, imgStyle: { maxHeight: '200px', borderRadius: '100%'}, className: "is-rounded"}}
                     />
                   </div>
                 ) : null}
               </div>
-              <div className="column is-6">
-                <h4 className="size-5 with-border with-border__left">O que os clientes dizem?</h4>
-                <i>{testimonial.quote}</i>
+              <div className="column is-6 has-text-left">
+                <h3 className="size-3 with-border with-border__left">O que os clientes dizem?</h3>
+                <i className="size-5">{testimonial.quote}</i>
                 <br />
                 <strong> – {testimonial.author}</strong>
               </div>
             </article>
-          </div>
         ))}
       </Carousel>
-    </div>
   </div>
 )
 
