@@ -94,7 +94,7 @@ h3.with-border__left:after
 
 .bs__arrow
   position: absolute
-  top: 90vh
+  bottom: 20px
   left: 50%
   z-index: 1
   width: 30px
@@ -105,14 +105,16 @@ h3.with-border__left:after
   border: 0
   outline: 0
   transform: translate3d(-50%, 0, 0)
-  animation: upDown 1s alternate
+  animation: upDown 1s infinite
   transition: visibility .4s ease-in-out,opacity .4s ease-in-out
 
 @keyframes upDown
   0%
     transform: translateY(0)
-  100%
+  50%
     transform: translateY(-10px)
+  100%
+    transform: translateY(0)
 
 
 // Helper Classes
@@ -137,6 +139,7 @@ h3.with-border__left:after
   display: flex
   justify-content: center
   align-items: center
+  position: relative
 
 .portfolio
   width: 100vw
