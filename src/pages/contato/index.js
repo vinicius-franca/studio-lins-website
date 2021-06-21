@@ -1,5 +1,4 @@
 import React from 'react'
-import { navigate } from 'gatsby-link'
 import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
 
@@ -14,20 +13,16 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { 
-      isValidated: false.valueOf,
+    this.state = {
+      name: "",
+      email: "",
+      message: ""
     }
   }
 
-  handleChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    })
-  }
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   handleSubmit = (e) => {
-    e.preventDefault()
-    debugger
     const form = e.target
     fetch('/', {
       method: 'POST',
@@ -37,11 +32,13 @@ export default class Index extends React.Component {
         ...this.state,
       }),
     })
-    .then(() => navigate("/contato/"))
-    .catch(error => alert(error))
+    .then(() => alert("Success!"))
+    .catch(error => alert(error));
+    e.preventDefault()
   }
 
   render() {
+    const { name, email, message } = this.state;
     return (
       <Layout>
         <section className="section" style={{ paddingTop: '100px', minHeight: 'calc(100vh - 82px)'}}>
@@ -80,6 +77,7 @@ export default class Index extends React.Component {
                           onChange={this.handleChange}
                           id={'name'}
                           required={true}
+                          value={name}
                         />
                       </div>
                     </div>
@@ -95,6 +93,7 @@ export default class Index extends React.Component {
                           onChange={this.handleChange}
                           id={'email'}
                           required={true}
+                          value={email}
                         />
                       </div>
                     </div>
@@ -109,6 +108,7 @@ export default class Index extends React.Component {
                           onChange={this.handleChange}
                           id={'message'}
                           required={true}
+                          value={message}
                         />
                       </div>
                     </div>
