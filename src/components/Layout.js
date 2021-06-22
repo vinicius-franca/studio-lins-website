@@ -2,7 +2,10 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+
+import "react-progress-button/react-progress-button.css"
 import './all.sass'
+
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
@@ -39,7 +42,7 @@ const TemplateWrapper = ({ children }) => {
           color="#ff4400"
         />
 
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#000" />
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import ProgressButton from 'react-progress-button'
 import Layout from '../../components/Layout'
 
 import imgContato from '../../img/lins-135-.jpg'
@@ -19,13 +20,16 @@ export default class Index extends React.Component {
       email: "",
       city: "",
       type: "",
-      message: ""
+      message: "",
+      buttonState: ""
     }
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   handleSubmit = (e) => {
+    e.preventDefault()
+    this.setState({buttonState: 'loading'})
     const form = e.target
     fetch('/', {
       method: 'POST',
@@ -35,9 +39,11 @@ export default class Index extends React.Component {
         ...this.state
       }),
     })
-    .then(() => alert("Success!"))
-    .catch(error => alert(error));
-    e.preventDefault()
+    .then(() => this.setState({buttonState: 'success'}))
+    .catch(error => {
+      console.log(error);
+      this.setState({buttonState: 'error'})
+    });
   }
 
   render() {
@@ -58,7 +64,6 @@ export default class Index extends React.Component {
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     name="contact"
-                    onSubmit={this.handleSubmit}
                   >
                     {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                     <input type="hidden" name="form-name" value="contact" />
@@ -143,6 +148,7 @@ export default class Index extends React.Component {
                           id={'type'}
                           value={this.state.value}
                         >
+                          <option value="">--</option>
                           <option value="Casal">Casal</option>
                           <option value="Gestante">Gestante</option>
                           <option value="Recém-nascido">Recém-nascido</option>
@@ -168,9 +174,9 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <button className="btn" type="submit">
+                      <ProgressButton onClick={this.handleSubmit} state={this.state.buttonState}>
                         Enviar
-                      </button>
+                      </ProgressButton>
                     </div>
                   </form>
                 </div>

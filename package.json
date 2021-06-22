@@ -33,6 +33,7 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^6.0.0",
     "react-photo-gallery": "^8.0.0",
+    "react-progress-button": "^5.1.0",
     "react-responsive-carousel": "^3.2.18",
     "react-typography": "^0.16.20",
     "typography": "^0.16.21",
