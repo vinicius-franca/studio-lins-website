@@ -64,6 +64,7 @@ export default class Index extends React.Component {
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     name="contact"
+                    onSubmit={this.handleSubmit}
                   >
                     {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                     <input type="hidden" name="form-name" value="contact" />
@@ -174,9 +175,12 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <ProgressButton onClick={this.handleSubmit} state={this.state.buttonState}>
+                      <ProgressButton type={"submit"} state={this.state.buttonState}>
                         Enviar
                       </ProgressButton>
+                      {/* <button className="btn" type="submit">
+                        Enviar
+                      </button> */}
                     </div>
                   </form>
                 </div>
