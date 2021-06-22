@@ -15,7 +15,10 @@ export default class Index extends React.Component {
     super(props)
     this.state = {
       name: "",
+      phone:"",
       email: "",
+      city: "",
+      type: "",
       message: ""
     }
   }
@@ -38,7 +41,7 @@ export default class Index extends React.Component {
   }
 
   render() {
-    const { name, email, message } = this.state;
+    const { name, phone, email, city, type, message } = this.state;
     return (
       <Layout>
         <section className="section" style={{ paddingTop: '100px', minHeight: 'calc(100vh - 82px)'}}>
@@ -82,6 +85,22 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
+                      <label className="label" htmlFor={'phone'}>
+                        Telefone
+                      </label>
+                      <div className="control">
+                        <input
+                          className="input"
+                          type={'text'}
+                          name={'phone'}
+                          onChange={this.handleChange}
+                          id={'phone'}
+                          required={true}
+                          value={phone}
+                        />
+                      </div>
+                    </div>
+                    <div className="field">
                       <label className="label" htmlFor={'email'}>
                         E-mail
                       </label>
@@ -98,8 +117,45 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
+                      <label className="label" htmlFor={'city'}>
+                        Cidade
+                      </label>
+                      <div className="control">
+                        <input
+                          className="input"
+                          type={'text'}
+                          name={'city'}
+                          onChange={this.handleChange}
+                          id={'city'}
+                          required={true}
+                          value={city}
+                        />
+                      </div>
+                    </div>
+                    <div className="field">
+                      <label className="label" htmlFor={'type'}>
+                        Qual tipo de serviço procura?
+                      </label>
+                      <div className="select">
+                        <select
+                          name={'type'}
+                          onChange={this.handleChange}
+                          id={'type'}
+                          value={this.state.value}
+                        >
+                          <option value="Casal">Casal</option>
+                          <option value="Gestante">Gestante</option>
+                          <option value="Recém-nascido">Recém-nascido</option>
+                          <option value="Família">Família</option>
+                          <option value="Feminino">Feminino</option>
+                          <option value="Evento">Evento</option>
+                          <option value="Outros">Outros</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div className="field">
                       <label className="label" htmlFor={'message'}>
-                        Mensagem
+                        Conte-me um pouco mais se achar necessário:
                       </label>
                       <div className="control">
                         <textarea
@@ -107,7 +163,6 @@ export default class Index extends React.Component {
                           name={'message'}
                           onChange={this.handleChange}
                           id={'message'}
-                          required={true}
                           value={message}
                         />
                       </div>
