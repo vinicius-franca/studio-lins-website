@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({
         backgroundAttachment: `fixed`,
       }}
     >
-      <button type="button" class="bs__arrow">
+      <button type="button" className="bs__arrow">
         <img src={ arrowDown } alt="Role para baixo" />
       </button>
     </div>
@@ -50,8 +50,7 @@ export const IndexPageTemplate = ({
     </section>
     <section className="section has-background-grey-lighter">
       <div className="container">
-        
-      <h3 className="size-3 with-border with-border has-text-centered">O que os clientes dizem?</h3>
+        <h3 className="size-3 with-border with-border has-text-centered">O que os clientes dizem?</h3>
         <div className="columns">
           <Testimonials testimonials={testimonials} />
         </div>
@@ -95,11 +94,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  description: PropTypes.string,
-  intro: PropTypes.array,
+  intro: PropTypes.object,
   testimonials: PropTypes.array,
 }
 
@@ -110,8 +105,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
         intro={frontmatter.intro}
         testimonials={frontmatter.testimonials}
       />
@@ -133,8 +126,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        heading
-        title
         image {
           childImageSharp {
             fluid(maxWidth: 1024, quality: 80) {
