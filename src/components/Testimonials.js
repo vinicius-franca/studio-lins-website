@@ -7,7 +7,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 
 const Testimonials = ({ testimonials }) => (
-  <Carousel showStatus={ false } className="testimonials" dynamicHeight={ true }>
+  <Carousel showStatus={ false } showThumbs={false} className="testimonials" dynamicHeight={ true }>
     {testimonials.map((testimonial) => (
         <article key={v4()} className="is-flex is-flex-direction-row is-justify-content-center is-align-content-center is-flex-wrap-nowrap">
           <div>
@@ -20,7 +20,6 @@ const Testimonials = ({ testimonials }) => (
             ) : null}
           </div>
           <div className="has-text-left">
-            <h3 className="size-3 with-border with-border__left">O que os clientes dizem?</h3>
             <i className="size-5">{testimonial.quote}</i>
             <br />
             <strong> – {testimonial.author}</strong>

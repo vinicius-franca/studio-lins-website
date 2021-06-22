@@ -50,6 +50,8 @@ export const IndexPageTemplate = ({
     </section>
     <section className="section has-background-grey-lighter">
       <div className="container">
+        
+      <h3 className="size-3 with-border with-border has-text-centered">O que os clientes dizem?</h3>
         <div className="columns">
           <Testimonials testimonials={testimonials} />
         </div>
