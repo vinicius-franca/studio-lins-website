@@ -23,7 +23,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
+        backgroundPosition: `center bottom`,
         backgroundAttachment: `fixed`,
       }}
     >
@@ -128,7 +128,7 @@ export const pageQuery = graphql`
       frontmatter {
         image {
           childImageSharp {
-            fluid(maxWidth: 1024, quality: 80) {
+            fluid(maxWidth: 1920, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
