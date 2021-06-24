@@ -17,11 +17,7 @@ export default class Index extends React.Component {
     this.state = {
       name: "",
       phone:"",
-      email: "",
-      city: "",
-      type: "",
-      message: "",
-      buttonState: ""
+      shop:""
     }
   }
 
@@ -47,19 +43,15 @@ export default class Index extends React.Component {
   }
 
   render() {
-    const { name, phone, email, city, type, message } = this.state;
+    const { name, phone, shop } = this.state;
     return (
       <Layout>
         <section className="section" style={{ paddingTop: '100px', minHeight: 'calc(100vh - 82px)'}}>
           <div className="container">
-            <h3 className="has-text-weight-semibold has-text-centered with-border" style={{marginBottom: '50px'}}>Contato</h3>
+            <h3 className="has-text-weight-semibold has-text-centered with-border" style={{marginBottom: '50px'}}>Cadastre-se</h3>
             <div className="content">
               <div className="columns">
                 <div className="column is-6">
-                  <p><strong>Olá! Tudo bem?</strong></p>
-                  <p><strong>Que bom que chegou até aqui! Fico feliz em saber que tenham se identificado com o nosso trabalho.</strong></p>
-                  <p><strong>Entre em contato através do nosso formulário ou diretamente pelo nosso Whatsapp <a href="https://api.whatsapp.com/send?phone=554199190512">clicando aqui</a>.
-                  Vamos criar lindas recordações juntos! </strong></p>
                   <img src={imgContato} alt="Imagem de um ensaio familiar" className="is-fluid box notify" style={{width: '100%'}} />
                 </div>
                 <div className="column is-6">
@@ -67,11 +59,11 @@ export default class Index extends React.Component {
                     method="POST"
                     netlify-honeypot="bot-field"
                     data-netlify="true"
-                    name="contact"
+                    name="mailing"
                     onSubmit={this.handleSubmit}
                   >
                     {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="mailing" />
                     <div hidden>
                       <label>
                         Don’t fill this out:{' '}
@@ -111,70 +103,18 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <label className="label" htmlFor={'email'}>
-                        E-mail
-                      </label>
-                      <div className="control">
-                        <input
-                          className="input"
-                          type={'email'}
-                          name={'email'}
-                          onChange={this.handleChange}
-                          id={'email'}
-                          required={true}
-                          value={email}
-                        />
-                      </div>
-                    </div>
-                    <div className="field">
-                      <label className="label" htmlFor={'city'}>
-                        Cidade
+                      <label className="label" htmlFor={'shop'}>
+                        Loja onde escaneou o QRCODE?
                       </label>
                       <div className="control">
                         <input
                           className="input"
                           type={'text'}
-                          name={'city'}
+                          name={'shop'}
                           onChange={this.handleChange}
-                          id={'city'}
+                          id={'shop'}
                           required={true}
-                          value={city}
-                        />
-                      </div>
-                    </div>
-                    <div className="field">
-                      <label className="label" htmlFor={'type'}>
-                        Qual tipo de serviço procura?
-                      </label>
-                      <div className="select">
-                        <select
-                          name={'type'}
-                          onChange={this.handleChange}
-                          id={'type'}
-                          value={this.state.value}
-                        >
-                          <option value="">--</option>
-                          <option value="Casal">Casal</option>
-                          <option value="Gestante">Gestante</option>
-                          <option value="Recém-nascido">Recém-nascido</option>
-                          <option value="Família">Família</option>
-                          <option value="Feminino">Feminino</option>
-                          <option value="Evento">Evento</option>
-                          <option value="Outros">Outros</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="field">
-                      <label className="label" htmlFor={'message'}>
-                        Conte-me um pouco mais se achar necessário:
-                      </label>
-                      <div className="control">
-                        <textarea
-                          className="textarea"
-                          name={'message'}
-                          onChange={this.handleChange}
-                          id={'message'}
-                          value={message}
+                          value={shop}
                         />
                       </div>
                     </div>
@@ -182,16 +122,13 @@ export default class Index extends React.Component {
                       <ProgressButton type={"submit"} state={this.state.buttonState}>
                         Enviar
                       </ProgressButton>
-                      {/* <button className="btn" type="submit">
-                        Enviar
-                      </button> */}
                     </div>
                   </form>
                 </div>
               </div>
               <div className="columns">
                 <div className="column is-12 has-text-centered">
-                  <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <Link to="https://api.whatsapp.com/send?phone=554199190512">AQUI!</Link></h2>
+                  <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <Link to="/contato">AQUI!</Link></h2>
                 </div>
               </div>
             </div>

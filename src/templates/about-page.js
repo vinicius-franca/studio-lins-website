@@ -12,10 +12,10 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
       <div
         className="full-width-image margin-top-0"
         style={{
-          backgroundImage: `url(${
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
           })`,
-          backgroundPosition: `top left`,
+          backgroundPosition: `center bottom`,
           backgroundAttachment: `fixed`,
         }}
       >
@@ -34,7 +34,7 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
                 backgroundImage: `url(${
                   !!image.childImageSharp ? image.childImageSharp.fluid.src : image
                 })`,
-                backgroundPosition: `top center`,
+                backgroundSize: 'cover',
                 width:`100%`,
                 height:`100%`,
                 margin: `20px`
@@ -43,7 +43,7 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
           </div>
           <div className="columns" style={{ marginTop: '50px' }}>
             <div className="column is-12 has-text-centered">
-              <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <Link to="/contato">AQUI!</Link></h2>
+              <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <Link to="https://api.whatsapp.com/send?phone=554199190512">AQUI!</Link></h2>
             </div>
           </div>
         </div>

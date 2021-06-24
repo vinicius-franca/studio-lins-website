@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
     <div
       className="full-width-image full-width-cover margin-top-0"
       style={{
-        backgroundImage: `url(${
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `center bottom`,
@@ -35,7 +35,7 @@ export const IndexPageTemplate = ({
       <div className="columns">
         <div className="column is-12">
           <h3 className="has-text-weight-semibold has-text-centered with-border">
-            {heading}
+            Portfólio
           </h3>
         </div>
       </div>
