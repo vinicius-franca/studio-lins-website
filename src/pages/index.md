@@ -15,12 +15,6 @@ testimonials:
   - image: /img/mask-group.jpg
     quote: '"Trabalho excepcional, total comprometimento e responsabilidade."'
     author: Luisa Neris
-title: Página Inicial
-image: /img/rectangle-1.jpg
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -34,6 +28,7 @@ intro:
       link: /portfolio/categories/infantil
   heading: Portfolio
   description: Imagens do Portfolio
+title: Página Inicial
 main:
   heading: Home
   description: >
@@ -50,4 +45,9 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+image: /img/14.jpg
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 ---
