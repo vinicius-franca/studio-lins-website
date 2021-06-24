@@ -2,7 +2,7 @@
 templateKey: about-page
 path: /sobre
 title: Sobre Nós
-image: /img/home-jumbotron.jpg
+image: /img/lins-135-.jpg
 ---
 ## Fotografia
 
