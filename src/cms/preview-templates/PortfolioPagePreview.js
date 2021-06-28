@@ -10,6 +10,7 @@ const PortfolioPostPreview = ({ entry, widgetFor }) => {
       description={entry.getIn(['data', 'description'])}
       categories={categories && categories.toJS()}
       title={entry.getIn(['data', 'title'])}
+      photos={entry.getIn(['data', 'photos'])}
     />
   )
 }

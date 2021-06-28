@@ -13,15 +13,15 @@ const CategoriesPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
-      <Helmet title={`Categorias | ${title}`} />
+    <section className="section" style={{ marginTop: '100px' }}>
+      <Helmet title={`Portfólio | ${title}`} />
       <div className="container content">
         <div className="columns">
           <div
             className="column is-10 is-offset-1"
             style={{ marginBottom: '6rem' }}
           >
-            <h1 className="title is-size-2 is-bold-light">Categorias</h1>
+            <h1 className="title is-size-2 is-bold-light">Portfólio</h1>
             <ul className="taglist">
               {group.map((category) => (
                 <li key={category.fieldValue}>

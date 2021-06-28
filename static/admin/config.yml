@@ -40,6 +40,11 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Categorias", name: "categories", widget: "list"}
+      - {label: "Fotos", name: photos, widget: list,
+          fields: [
+            {label: Image, name: image, widget: image}
+          ]
+        }
 
   - name: "pages"
     label: "Pages"

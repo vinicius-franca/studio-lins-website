@@ -5,6 +5,9 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Masonry from 'react-masonry-css'
+
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const PortfolioPostTemplate = ({
   content,
@@ -12,6 +15,7 @@ export const PortfolioPostTemplate = ({
   categories,
   title,
   helmet,
+  photos
 }) => {
   const PostContent = contentComponent || Content
 
@@ -25,6 +29,20 @@ export const PortfolioPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <PostContent content={content} />
+            <Masonry
+              breakpointCols={3}
+              className="my-masonry-grid"
+              columnClassName="my-masonry-grid_column">
+                {photos && photos.length ? (
+                  photos.map((photo) => (
+                    <div key={photo + `photo`}>
+                      <PreviewCompatibleImage
+                        imageInfo={{ image: photo.image, alt: `imagem do portfolio`, }}
+                      />
+                    </div>
+                  )
+                )) : null }
+            </Masonry>
             {categories && categories.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Categorias</h4>
@@ -49,6 +67,7 @@ PortfolioPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  photos: PropTypes.object,
   helmet: PropTypes.object,
 }
 
@@ -72,6 +91,7 @@ const PortfolioPost = ({ data }) => {
         }
         categories={post.frontmatter.categories}
         title={post.frontmatter.title}
+        photos={post.frontmatter.photos}
       />
     </Layout>
   )
@@ -95,6 +115,15 @@ export const pageQuery = graphql`
         title
         description
         categories
+        photos {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1024, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
     }
   }
