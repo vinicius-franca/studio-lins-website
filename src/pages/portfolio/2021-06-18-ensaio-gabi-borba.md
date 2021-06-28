@@ -1,14 +1,33 @@
 ---
 templateKey: portfolio-post
-title: Ensaio Gabi Borba
+title: Infantil e família
 date: 2021-06-18T05:34:44.064Z
 description: Ensaio da gabi, um dos melhores ensaios infantis que já fiz.
 featuredimage: /img/lins-135-.jpg
 categories:
   - Infantil
+photos:
+  - image: /img/_mg_2184-copy.jpg
+  - image: /img/_mg_2518.jpg
+  - image: /img/_mg_4903.jpg
+  - image: /img/_mg_5003.jpg
+  - image: /img/_mg_5213.jpg
+  - image: /img/_mg_5629.jpg
+  - image: /img/_mg_5760.jpg
+  - image: /img/_mg_5842.jpg
+  - image: /img/_mg_5908.jpg
+  - image: /img/_mg_6091.jpg
+  - image: /img/_mg_6173.jpg
+  - image: /img/_mg_6204.jpg
+  - image: /img/_mg_6267.jpg
+  - image: /img/_mg_6353-2.jpg
+  - image: /img/_mg_6601.jpg
+  - image: /img/_mg_8317.jpg
+  - image: /img/_mg_9865.jpg
+  - image: /img/_mg_9880.jpg
+  - image: /img/lins-52-.jpg
+  - image: /img/lins-85-.jpg
+  - image: /img/lins-167-.jpg
+  - image: /img/lins-216-.jpg
 ---
-![](/img/lins-216-.jpg)
-
-![Ensaio da gabi ](/img/lins-17-.jpg)
-
-![Ensaio da Gabi foto 2](/img/lins-135-.jpg)
+Lorem ipsum
