@@ -4,31 +4,29 @@ import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 import Masonry from 'react-masonry-css'
 
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const PortfolioPostTemplate = ({
-  content,
   contentComponent,
   categories,
   title,
   helmet,
   photos
 }) => {
-  const PostContent = contentComponent || Content
+  /* const PostContent = contentComponent || Content */
 
   return (
-    <section className="section" style={{ marginTop: '100px'}}>
+    <section className="section" style={{ marginTop: '70px'}}>
       {helmet || ''}
       <div className="container content">
-        <h3 className="has-text-weight-semibold has-text-centered with-border">
+        <h3 className="has-text-weight-lighter has-text-centered with-border">
           { title }
         </h3>
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <PostContent content={content} />
+            {/* <PostContent content={content} /> */}
             <Masonry
               breakpointCols={3}
               className="my-masonry-grid"
@@ -78,7 +76,6 @@ const PortfolioPost = ({ data }) => {
     <Layout>
       <PortfolioPostTemplate
         content={post.html}
-        contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Portfólio">

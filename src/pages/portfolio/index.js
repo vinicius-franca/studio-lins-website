@@ -9,7 +9,7 @@ export default class PortfolioIndexPage extends React.Component {
       <Layout>
         <div className="columns" style={{marginTop:'100px'}}>
           <div className="column is-12">
-            <h3 className="has-text-weight-semibold has-text-centered with-border">
+            <h3 className="has-text-weight-lighter has-text-centered with-border">
               Portfólio
             </h3>
           </div>
