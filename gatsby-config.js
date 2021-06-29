@@ -83,5 +83,11 @@ module.exports = {
         pixelId: "1560336644174138",
       },
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ],
 }
