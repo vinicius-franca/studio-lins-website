@@ -5,6 +5,7 @@ date: 2021-06-29T04:59:08.905Z
 description: Sessão de Gestante - A espera do Uriah
 featuredpost: true
 featuredimage: /img/2.jpg
+tags: Recém-nascido
 ---
 Conheci a Perla e o Rodrigo através de um amigo e logo nos tornamos amigos também. Quando eles me chamaram para fazer o resgitro do novo membro da família,
 me senti honrada e muito feliz. Conversamos e pensamos juntos em lugares que retratasse exatamente o que eles são. 
