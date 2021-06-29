@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import ProgressButton from 'react-progress-button'
 import Layout from '../../components/Layout'
 
@@ -47,12 +46,18 @@ export default class Index extends React.Component {
   }
 
   render() {
-    const { name, phone, email, city, type, message } = this.state;
+    const { name, phone, email, city, message } = this.state;
     return (
       <Layout>
-        <section className="section" style={{ paddingTop: '100px', minHeight: 'calc(100vh - 82px)'}}>
+        <section className="section" style={{ marginTop: '70px', minHeight: 'calc(100vh - 82px)'}}>
           <div className="container">
-            <h3 className="has-text-weight-semibold has-text-centered with-border" style={{marginBottom: '50px'}}>Contato</h3>
+            <div className="columns">
+              <div className="column is-12">
+                <h3 className="has-text-weight-semibold has-text-centered with-border">
+                  Contato
+                </h3>
+              </div>
+            </div>
             <div className="content">
               <div className="columns">
                 <div className="column is-6">
@@ -191,7 +196,7 @@ export default class Index extends React.Component {
               </div>
               <div className="columns">
                 <div className="column is-12 has-text-centered">
-                  <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <Link to="https://api.whatsapp.com/send?phone=554199190512">AQUI!</Link></h2>
+                  <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <a target="_blank"  rel="noreferrer" href="https://api.whatsapp.com/send?phone=554199190512">AQUI!</a></h2>
                 </div>
               </div>
             </div>

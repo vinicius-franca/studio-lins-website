@@ -32,8 +32,8 @@ export const PortfolioPostTemplate = ({
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
                 {photos && photos.length ? (
-                  photos.map((photo) => (
-                    <div key={photo + `photo`}>
+                  photos.map((photo, i) => (
+                    <div key={i + `photo`}>
                       <PreviewCompatibleImage
                         imageInfo={{ image: photo.image, alt: `imagem do portfolio`, }}
                       />
@@ -65,7 +65,7 @@ PortfolioPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  photos: PropTypes.object,
+  photos: PropTypes.array,
   helmet: PropTypes.object,
 }
 
@@ -88,7 +88,7 @@ const PortfolioPost = ({ data }) => {
         }
         categories={post.frontmatter.categories}
         title={post.frontmatter.title}
-        photos={post.frontmatter.photos}
+        photos={post.frontmatter.photos || {}}
       />
     </Layout>
   )
