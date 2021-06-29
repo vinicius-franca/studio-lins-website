@@ -1,4 +1,5 @@
 import React from 'react'
+import { SRLWrapper } from "simple-react-lightbox";
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
@@ -26,22 +27,23 @@ export const PortfolioPostTemplate = ({
         </h3>
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            {/* <PostContent content={content} /> */}
-            <Masonry
-              breakpointCols={3}
-              className="my-masonry-grid"
-              columnClassName="my-masonry-grid_column">
-                {photos && photos.length ? (
-                  photos.map((photo, i) => (
-                    <div key={i + `photo`}>
-                      <PreviewCompatibleImage
-                        imageInfo={{ image: photo.image, alt: `imagem do portfolio`, }}
-                      />
-                    </div>
-                  )
-                )) : null }
-            </Masonry>
-            {categories && categories.length ? (
+            <SRLWrapper>
+              <Masonry
+                breakpointCols={3}
+                className="my-masonry-grid"
+                columnClassName="my-masonry-grid_column">
+                    {photos && photos.length ? (
+                      photos.map((photo, i) => (
+                        <div key={i + `photo`}>
+                            <PreviewCompatibleImage
+                              imageInfo={{ image: photo.image, alt: `Ensaio da categoria ${ title }`, }}
+                            />
+                        </div>
+                      )
+                    )) : null }
+              </Masonry>
+            </SRLWrapper>
+            {/* {categories && categories.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Categorias</h4>
                 <ul className="taglist">
@@ -52,7 +54,7 @@ export const PortfolioPostTemplate = ({
                   ))}
                 </ul>
               </div>
-            ) : null}
+            ) : null} */}
           </div>
         </div>
       </div>

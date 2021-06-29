@@ -36,6 +36,7 @@
     "react-progress-button": "^5.1.0",
     "react-responsive-carousel": "^3.2.18",
     "react-typography": "^0.16.20",
+    "simple-react-lightbox": "^3.6.6",
     "typography": "^0.16.21",
     "uuid": "^7.0.0"
   },

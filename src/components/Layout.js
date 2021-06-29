@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
+import SimpleReactLightbox from 'simple-react-lightbox'
+
 import "react-progress-button/react-progress-button.css"
 import './all.sass'
 
@@ -53,7 +55,9 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <SimpleReactLightbox>
+        <div>{children}</div>
+      </SimpleReactLightbox>
       <Footer />
     </div>
   )
