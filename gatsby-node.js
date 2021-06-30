@@ -16,7 +16,6 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              tags
               categories
               templateKey
             }
@@ -48,7 +47,7 @@ exports.createPages = ({ actions, graphql }) => {
     })
 
     // Tag pages:
-    let tags = []
+    /* let tags = []
     // Iterate through each post, putting all found tags into `tags`
     posts.forEach((edge) => {
       if (_.get(edge, `node.frontmatter.tags`)) {
@@ -69,9 +68,9 @@ exports.createPages = ({ actions, graphql }) => {
           tag,
         },
       })
-    })
+    }) */
 
-    // Tag pages:
+    // Categories pages:
     let categories = []
     // Iterate through each post, putting all found tags into `tags`
     posts.forEach((edge) => {
