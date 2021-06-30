@@ -9,18 +9,7 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
 
   return (
     <div>
-      <div
-        className="full-width-image margin-top-0"
-        style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          backgroundPosition: `center bottom`,
-          backgroundAttachment: `fixed`,
-        }}
-      >
-      </div>
-      <section className="section section--gradient">
+      <section className="section section--gradient" style={{ marginTop: '70px'}}>
         <div className="container">
           <h3 className="has-text-weight-semibold has-text-centered with-border">{title}</h3>
           <div className="columns">

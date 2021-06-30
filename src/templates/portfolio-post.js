@@ -43,18 +43,6 @@ export const PortfolioPostTemplate = ({
                     )) : null }
               </Masonry>
             </SRLWrapper>
-            {/* {categories && categories.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Categorias</h4>
-                <ul className="taglist">
-                  {categories.map((category) => (
-                    <li key={category + `categoria`}>
-                      <Link to={`/portfolio/categories/${kebabCase(category)}/`}>{category}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null} */}
           </div>
         </div>
       </div>
