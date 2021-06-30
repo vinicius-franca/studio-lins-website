@@ -21,12 +21,9 @@ export const BlogPostTemplate = ({
         {helmet || ''}
         <div className="container">
           <h3 className="has-text-weight-semibold has-text-centered with-border">{title}</h3>
+          <h5 className="has-text-weight-semibold has-text-centered mb-4">{description}</h5>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-                {title}
-              </h1>
-              <p>{description}</p>
               <PostContent content={content} />
             </div>
           </div>
