@@ -4,7 +4,7 @@ title: A espera do Uriah
 date: 2021-06-29T04:59:08.905Z
 description: Sessão de Gestante - A espera do Uriah
 featuredpost: true
-featuredimage: /img/2.jpg
+featuredimage: /img/7.jpg
 tags: Recém-nascido
 ---
 Conheci a Perla e o Rodrigo através de um amigo e logo nos tornamos amigos também. Quando eles me chamaram para fazer o resgitro do novo membro da família,
