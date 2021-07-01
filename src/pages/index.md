@@ -48,15 +48,15 @@ testimonials:
     image: /img/vitoria-cola.jpg
 intro:
   blurbs:
-    - image: /img/coffee.png
-      text: Company
-      link: /portfolio/categories/company
-    - image: /img/rectangle-39275.jpg
+    - image: /img/_mg_2158-copy.jpg
+      text: Feminino
+      link: /portfolio/2021-07-01-ensaio-feminino/
+    - image: /img/_mg_1419.jpg
       text: Casais
-      link: /portfolio/categories/casais
+      link: /portfolio/2021-06-14-ensaio-casal/
     - image: /img/lins-216-.jpg
-      text: Infantil
-      link: /portfolio/categories/infantil
+      text: Infantil e Família
+      link: /portfolio/2021-06-18-ensaio-infantil-familia/
   heading: Portfolio
   description: Imagens do Portfolio
 title: Página Inicial
