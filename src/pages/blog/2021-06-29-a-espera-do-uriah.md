@@ -7,15 +7,24 @@ featuredpost: true
 featuredimage: /img/7.jpg
 tags: Recém-nascido
 ---
-Conheci a Perla e o Rodrigo através de um amigo e logo nos tornamos amigos também. Quando eles me chamaram para fazer o resgitro do novo membro da família,
-me senti honrada e muito feliz. Conversamos e pensamos juntos em lugares que retratasse exatamente o que eles são. 
-E meus amigos...que dia maravilhoso que passei com essa família. Eles amam tanto cavalos que eles tem dois em casa, pensa que sonho! 
-Eles me deixaram a vontade pra criar e a conexão foi forte.
-Agradeço muito a confiança depositada no meu olhar. É sempre maravilhoso poder contar a história de famílias como essa.
-É sobre amor, sabe? Isso nos basta.
+##### Conheci a Perla e o Rodrigo através de um amigo e logo nos tornamos amigos também. 
 
-A vida é um sopro, não deixe de documentar ela! 
-Vamos criar memórias afetivas juntos?
+Quando eles me chamaram para fazer o resgitro do novo membro da família, me senti honrada e muito feliz. <br><br>
+
+Conversamos e pensamos juntos em lugares que retratasse exatamente o que eles são. <br>
+E meus amigos...que dia maravilhoso que passei com essa família. Eles amam tanto cavalos que eles tem dois em casa, pensa que sonho! <br><br>
+
+
+Eles me deixaram a vontade pra criar e a conexão foi forte.<br><br>
+
+
+Agradeço muito a confiança depositada no meu olhar. É sempre maravilhoso poder contar a história de famílias como essa.<br><br>
+
+
+É sobre amor, sabe? Isso nos basta.<br><br>
+
+A vida é um sopro, não deixe de documentar ela! <br>
+Vamos criar memórias afetivas juntos?<br><br>
 
 ![](/img/1.jpg)
 
