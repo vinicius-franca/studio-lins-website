@@ -3,7 +3,7 @@ templateKey: portfolio-post
 title: Casal
 date: 2021-06-14T21:59:41.685Z
 description: Ensaios de casais realizados pelo studio
-featuredimage: /img/rectangle-39275.jpg
+featuredimage: /img/_mg_1419.jpg
 categories:
   - Casal
 photos:
