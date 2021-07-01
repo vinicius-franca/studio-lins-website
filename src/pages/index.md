@@ -15,21 +15,16 @@ testimonials:
       vou indicar você sem dúvidas"'
     author: Bianca
     image: /img/_mg_2515.jpg
-  - image: /img/lins-135-.jpg
+  - image: /img/lins-depoimento.jpg
     quote: '"Eu achei o máximo ser fotografada. No começo achamos que não levamos
       jeito, mas a Maria vai nos deixando a vontade, e quando nos damos conta,
       já estamos modelando.   Super indico seu trabalho. Fotos de muita
       qualidade, e bom gosto! Amo!"'
     author: Dilene Lins
-  - quote: '"A experiência da fotografia é uma expressão de amor em forma de arte. A
-      arte captada em cada movimento, congelar instantes para que sejam eternos.
-      Quando procurei a Maria Clara, soube que seria um investimento para a vida
-      toda. Eu já sabia da sua competência para o trabalho, mas ela conseguiu me
-      surpreender! Ficamos muito à vontade para mostrarmos nosso jeito de ser
-      família. Minha filha amou, nós amamos o resultado.  Eu recomendo a
-      experiência com essa profissional para todos que queiram se sentir livres
-      e respeitados em suas essências durante o registro fotográfico,  é
-      marcante demais!"'
+  - quote: '"Ficamos muito à vontade para mostrarmos nosso jeito de ser família.
+      Minha filha amou, nós amamos o resultado.  Eu recomendo a experiência com
+      essa profissional para todos que queiram se sentir livres e respeitados em
+      suas essências durante o registro fotográfico,  é marcante demais!"'
     author: Jamille Martins
     image: /img/_mg_8844.jpg
   - quote: '"Foi uma experiência maravilhosa, como eu nunca tinha feito achei que
@@ -38,7 +33,7 @@ testimonials:
       ainda! Obrigada novamente! Não só indicaria como já indiquei e sempre
       indicarei!"'
     author: Perlla Nunes
-    image: /img/_mg_8844.jpg
+    image: /img/_mg_3168.jpg
   - quote: '"Eu gostei muito, nunca havia feito algum ensaio de fotos antes e você
       me deixou muito confortável, me orientou e me guiou para que o resultado
       ficasse exatamente como eu esperava, apesar de ter superado minhas
@@ -50,7 +45,7 @@ intro:
   blurbs:
     - image: /img/_mg_2158-copy.jpg
       text: Feminino
-      link: /portfolio/2021-07-01-ensaio-feminino/
+      link: /portfolio/2021-07-01-feminino/
     - image: /img/_mg_1419.jpg
       text: Casais
       link: /portfolio/2021-06-14-ensaio-casal/
