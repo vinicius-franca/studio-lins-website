@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section has-background-grey-lighter">
+    <section className="section" style={{ backgroundColor: "#f0f0f0" }}>
       <div className="container">
         <h3 className="size-3 with-border with-border has-text-centered">O que os clientes dizem?</h3>
         <div className="columns">
