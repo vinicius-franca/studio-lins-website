@@ -23,7 +23,7 @@ const Footer = class extends React.Component {
                     alt="Mail Icon"
                     style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
                   /> contato@studiolinsfotografia.com.br</a>
-                  <a className="is-block has-text-white-ter" href="https://www.facebook.com/Studio-Lins-Fotografia-105772138401127"><img
+                  <a className="is-block has-text-white-ter" href="https://api.whatsapp.com/send?phone=554199190512"><img
                     src={whatsappIcon}
                     alt="Phone Icon"
                     style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}

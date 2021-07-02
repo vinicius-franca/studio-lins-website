@@ -23,9 +23,13 @@ export const PortfolioPostTemplate = ({
     <section className="section" style={{ marginTop: '70px'}}>
       {helmet || ''}
       <div className="container content">
-        <h3 className="has-text-weight-lighter has-text-centered with-border">
-          { title }
-        </h3>
+        <div className="columns">
+          <div className="column is-12">
+            <h3 className="has-text-weight-semibold has-text-centered with-border">
+            { title }
+            </h3>
+          </div>
+        </div>
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <SRLWrapper>
