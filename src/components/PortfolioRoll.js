@@ -28,9 +28,6 @@ class PortfolioRoll extends React.Component {
                         <div className="featured-thumbnail-overlay">
                           <div>
                             <h3 className="has-text-white is-size-4">{post.frontmatter.title}</h3>
-                            <span className="has-text-white is-size-5 is-block">
-                              &#8226;  {post.frontmatter.date} &#8226;
-                            </span>
                           </div>
                         </div>
                       </div>
@@ -74,7 +71,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 780, quality: 100) {
+                    fluid(maxWidth: 1024, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

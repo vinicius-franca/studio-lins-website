@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import { SRLWrapper } from "simple-react-lightbox";
 import PropTypes from 'prop-types'

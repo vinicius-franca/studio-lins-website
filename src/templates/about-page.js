@@ -32,7 +32,7 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
           </div>
           <div className="columns" style={{ marginTop: '50px' }}>
             <div className="column is-12 has-text-centered">
-              <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <Link to="https://api.whatsapp.com/send?phone=554199190512">AQUI!</Link></h2>
+              <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <a target="_blank" href="https://api.whatsapp.com/send?phone=554199190512">AQUI!</a></h2>
             </div>
           </div>
         </div>

@@ -93,7 +93,7 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image: PropTypes.object,
   intro: PropTypes.object,
   testimonials: PropTypes.array,
 }

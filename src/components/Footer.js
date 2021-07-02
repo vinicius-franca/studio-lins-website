@@ -1,6 +1,8 @@
 import React from 'react'
 
-import logo from '../img/logo.svg'
+import logo from '../img/logo-simplify.svg'
+import emailIcon from '../img/email.svg'
+import whatsappIcon from '../img/whatsapp.svg'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import linkedin from '../img/social/linkedin.svg'
@@ -14,9 +16,18 @@ const Footer = class extends React.Component {
             <div className="columns">
               <div className="column is-4">
                 <section>
-                  <h4 className="has-text-white-ter is-uppercase">Contato</h4>
-                  <a href="mailto:falecom@studiolinsfotografia.com.br">falecom@studiolinsfotografia.com.br</a>
-                  <p>+55 11 3333-3333</p>
+                  <h4 className="has-text-white-ter is-uppercase mb-4">Contato</h4>
+                  <a className="is-block has-text-white-ter mb-4" href="mailto:contato@studiolinsfotografia.com.br">
+                    <img
+                    src={emailIcon}
+                    alt="Mail Icon"
+                    style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
+                  /> contato@studiolinsfotografia.com.br</a>
+                  <a className="is-block has-text-white-ter" href="https://www.facebook.com/Studio-Lins-Fotografia-105772138401127"><img
+                    src={whatsappIcon}
+                    alt="Phone Icon"
+                    style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
+                  /> (48) 99927-9696</a>
                 </section>
               </div>
               <div className="column is-4">
@@ -25,39 +36,24 @@ const Footer = class extends React.Component {
                   <img
                     src={logo}
                     alt="Studio Lins Fotografia"
-                    style={{ width: '14em', }}
+                    style={{ width: '110px', }}
                   />
                 </div>
                 </section>
               </div>
               <div className="column is-4 social">
                 <h4 className="has-text-white-ter is-uppercase">Redes Sociais</h4>
-                <a title="facebook" href="https://facebook.com">
+                <a title="facebook" href="https://www.facebook.com/Studio-Lins-Fotografia-105772138401127">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: '32px', height: '32px' }}
                   />
                 </a>
-                <a title="linkedin" href="https://linkedin.com">
-                  <img
-                    className="fas fa-lg"
-                    src={linkedin}
-                    alt="linkedin"
-                    style={{ width: '32px', height: '32px' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
+                <a title="instagram" href="https://instagram.com/studiolinsfotografia">
                   <img
                     src={instagram}
                     alt="Instagram"
-                    style={{ width: '32px', height: '32px' }}
-                  />
-                </a>
-                <a title="behance" href="https://behance.com">
-                  <img
-                    src={behance}
-                    alt="behance"
                     style={{ width: '32px', height: '32px' }}
                   />
                 </a>

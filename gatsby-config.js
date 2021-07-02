@@ -5,6 +5,9 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-image`,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-sass',
         options: {
@@ -19,9 +22,6 @@ module.exports = {
         name: 'uploads',
       },
     },
-    `gatsby-plugin-image`,
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -82,12 +82,6 @@ module.exports = {
       options: {
         pixelId: "1560336644174138",
       },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    }
   ],
 }
