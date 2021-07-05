@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
@@ -26,13 +26,11 @@ export const IndexPageTemplate = ({
       style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))`}}>
       <Carousel showStatus={ false } showThumbs={false} showArrows={false} dynamicHeight={ false }>
         { images.map((image) => (
-          <div>
-            { image.childImageSharp ? (
-                  <PreviewCompatibleImage
-                    imageInfo={{ image: image.childImageSharp}}
-                  />
-              ) : null }
-          </div>
+            image.childImageSharp ? (
+              <div>
+                <Img fluid={image.childImageSharp.fluid} />
+              </div>
+            ) : null
         )) }
       </Carousel>
       <button type="button" className="bs__arrow">
@@ -103,7 +101,7 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-  images: PropTypes.object,
+  images: PropTypes.array,
   intro: PropTypes.object,
   testimonials: PropTypes.array,
 }
