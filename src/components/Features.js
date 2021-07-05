@@ -9,7 +9,9 @@ const FeatureGrid = ({ gridItems }) => (
       <div key={item.text} className="column is-4 portfolio-item">
         <Link to={`${item.link}`}>
           <PreviewCompatibleImage imageInfo={item} />
-          <span className="portfolio-title has-text-white is-size-5">{item.text}</span>
+          <div className="featured-thumbnail-overlay">
+            <span className="portfolio-title has-text-white is-size-5">{item.text}</span>
+          </div>
         </Link>
       </div>
     ))}
