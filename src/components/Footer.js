@@ -23,7 +23,7 @@ const Footer = class extends React.Component {
                     alt="Mail Icon"
                     style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
                   /> contato@studiolinsfotografia.com.br</a>
-                  <a className="is-block has-text-white-ter" href="https://api.whatsapp.com/send?phone=554199190512"><img
+                  <a className="is-block has-text-white-ter" href="https://api.whatsapp.com/send?phone=5548999279696"><img
                     src={whatsappIcon}
                     alt="Phone Icon"
                     style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
@@ -36,27 +36,32 @@ const Footer = class extends React.Component {
                   <img
                     src={logo}
                     alt="Studio Lins Fotografia"
-                    style={{ width: '110px', }}
+                    style={{ width: '75px', }}
                   />
                 </div>
                 </section>
               </div>
-              <div className="column is-4 social">
+              <div className="column is-4 social has-text-centered">
                 <h4 className="has-text-white-ter is-uppercase">Redes Sociais</h4>
                 <a title="facebook" href="https://www.facebook.com/Studio-Lins-Fotografia-105772138401127">
                   <img
                     src={facebook}
                     alt="Facebook"
-                    style={{ width: '32px', height: '32px' }}
+                    style={{ width: '48px', height: '48px' }}
                   />
                 </a>
                 <a title="instagram" href="https://instagram.com/studiolinsfotografia">
                   <img
                     src={instagram}
                     alt="Instagram"
-                    style={{ width: '32px', height: '32px' }}
+                    style={{ width: '48px', height: '48px' }}
                   />
                 </a>
+                <a className="has-text-white-ter" href="https://api.whatsapp.com/send?phone=5548999279696"><img
+                    src={whatsappIcon}
+                    alt="Whatsapp"
+                    style={{ width: '48px', height: '48px'}}
+                  /></a>
               </div>
             </div>
           </div>

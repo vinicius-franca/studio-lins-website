@@ -32,7 +32,7 @@ export const PortfolioPostTemplate = ({
         </div>
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <SRLWrapper>
+            <SRLWrapper options={{ buttons : { showDownloadButton: false }, caption: { showCaption: false } }}>
               <Masonry
                 breakpointCols={3}
                 className="my-masonry-grid"

@@ -20,7 +20,7 @@ const Testimonials = ({ testimonials }) => (
             ) : null}
           </div>
           <div className="has-text-left">
-            <i className="is-size-4">{testimonial.quote}</i>
+            <p className="is-size-4">{testimonial.quote}</p>
             <br />
             <strong> – {testimonial.author}</strong>
           </div>

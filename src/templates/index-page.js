@@ -83,7 +83,9 @@ export const IndexPageTemplate = ({
               Instagram
             </h3>
             <div className="column is-12">
-              <img src={imgInstagram} alt="instagram feed" className="is-fluid" style={{width: '100%'}} />
+              <a href="https://www.instagram.com/studiolinsfotografia/" target="_blank">
+                <img src={imgInstagram} alt="instagram feed" className="is-fluid" style={{width: '100%'}} />
+              </a>
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
-  
 
   constructor(props) {
 
@@ -109,9 +108,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contato">
                 Contato
               </Link>
-              {/* <Link className="navbar-item" to="/">
+              <Link className="navbar-item" to="/faq">
                 F.A.Q
-              </Link> */}
+              </Link>
             </div>
           </div>
         </div>
