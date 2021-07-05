@@ -7,6 +7,12 @@ mainpitch:
   description: >
     This is a digital research laboratory. It’s where we examine new
     technologies and figure out what works and what doesn’t.
+images:
+  - image: /img/14.jpg
+  - image: /img/_mg_4903.jpg
+  - image: /img/_mg_9792.jpg
+  - image: /img/vitoria-12.jpg
+  - image: /img/lins-135-.jpg
 testimonials:
   - quote: '"Primeiramente eu achei que seria difícil por não conseguir me soltar.
       Mas você me deixou a vontade, e me ajudou muito. Por fim, eu achei
@@ -71,9 +77,6 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-images:
-  - image: /img/_mg_5678.jpg
-  - image: /img/_mg_1448.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
