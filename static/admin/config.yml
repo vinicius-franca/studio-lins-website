@@ -51,8 +51,10 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Imagens de Capa", name: images, widget: list,
+              fields: [{label: Foto, name: image, widget: image}]
+            }
           - {label: Depoimentos, name: testimonials, widget: list, fields: [{label: Depoimento, name: quote, widget: string}, {label: Autor, name: author, widget: string}, {label: Image, name: image, widget: image}]}
-          - {label: Image, name: image, widget: image}
           - {label: Intro, name: intro, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}, {label: Link, name: link, widget: string}]}]}
       - file: "src/pages/sobre/index.md"
         label: "Sobre"

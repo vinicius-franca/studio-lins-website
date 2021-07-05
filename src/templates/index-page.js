@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
@@ -11,7 +15,7 @@ import arrowDown from '../img/arrow-down.svg'
 import imgInstagram from '../img/instagram.png'
 
 export const IndexPageTemplate = ({
-  image,
+  images,
   heading,
   intro,
   testimonials
@@ -19,14 +23,18 @@ export const IndexPageTemplate = ({
   <div>
     <div
       className="full-width-image full-width-cover margin-top-0"
-      style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `center bottom`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
+      style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))`}}>
+      <Carousel showStatus={ false } showThumbs={false} showArrows={false} dynamicHeight={ false }>
+        { images.map((image) => (
+          <div>
+            { image.childImageSharp ? (
+                  <PreviewCompatibleImage
+                    imageInfo={{ image: image.childImageSharp}}
+                  />
+              ) : null }
+          </div>
+        )) }
+      </Carousel>
       <button type="button" className="bs__arrow">
         <img src={ arrowDown } alt="Role para baixo" />
       </button>
@@ -95,7 +103,7 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.object,
+  images: PropTypes.object,
   intro: PropTypes.object,
   testimonials: PropTypes.array,
 }
@@ -106,7 +114,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
+        images={frontmatter.images}
         intro={frontmatter.intro}
         testimonials={frontmatter.testimonials}
       />
@@ -128,10 +136,12 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        image {
-          childImageSharp {
-            fluid(maxWidth: 1920, quality: 100) {
-              ...GatsbyImageSharpFluid
+        images {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1920, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }
