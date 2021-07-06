@@ -2,7 +2,7 @@
 templateKey: faq-page
 path: /faq
 title: F.A.Q
-image: /img/lins-135-.jpg
+image: /img/1.jpg
 ---
 
 <!--StartFragment-->
