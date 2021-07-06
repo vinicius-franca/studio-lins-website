@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { v4 } from 'uuid'
 import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -21,22 +21,25 @@ export const IndexPageTemplate = ({
   testimonials
 }) => (
   <div>
-    <div
-      className="full-width-image full-width-cover margin-top-0"
-      style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))`}}>
-      <Carousel showStatus={ false } showThumbs={false} showArrows={false} dynamicHeight={ false }>
-        { images.map((image) => (
-            image.childImageSharp ? (
-              <div>
-                <Img fluid={image.childImageSharp.fluid} />
-              </div>
-            ) : null
-        )) }
-      </Carousel>
-      <button type="button" className="bs__arrow">
-        <img src={ arrowDown } alt="Role para baixo" />
-      </button>
-    </div>
+    <Carousel showStatus={ false } showThumbs={false} showArrows={false} dynamicHeight={ false }>
+      { images.map((image) => (
+        <div
+          className="full-width-image full-width-cover margin-top-0"
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${
+              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })`,
+            backgroundPosition: `center bottom`,
+            backgroundAttachment: `fixed`,
+          }}
+          key={v4()}
+        >
+          <button type="button" className="bs__arrow">
+            <img src={ arrowDown } alt="Role para baixo" />
+          </button>
+        </div>
+      )) }
+    </Carousel>
     <section className="section section--gradient portfolio">
       <div className="columns">
         <div className="column is-12">
