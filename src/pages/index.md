@@ -49,9 +49,9 @@ testimonials:
     image: /img/vitoria-cola.jpg
 intro:
   blurbs:
-    - image: /img/_mg_2158-copy.jpg
-      text: Feminino
-      link: /portfolio/2021-07-01-feminino/
+    - image: /img/_mg_3755.jpg
+      text: Gestantes
+      link: /portfolio/2021-07-06-gestantes/
     - image: /img/_mg_1419.jpg
       text: Casais
       link: /portfolio/2021-06-14-ensaio-casal/
