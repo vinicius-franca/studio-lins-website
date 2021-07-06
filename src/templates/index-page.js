@@ -23,20 +23,21 @@ export const IndexPageTemplate = ({
   <div>
     <Carousel showStatus={ false } showThumbs={false} showArrows={false} dynamicHeight={ false }>
       { images.map((image) => (
-        <div
-          className="full-width-image full-width-cover margin-top-0"
-          style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${
-              !!image.childImageSharp ? image : null
-            })`,
-            backgroundPosition: `center bottom`,
-            backgroundAttachment: `fixed`,
-          }}
-          key={v4()}
-        >
-          <button type="button" className="bs__arrow">
-            <img src={ arrowDown } alt="Role para baixo" />
-          </button>
+        <div key={v4()}>
+          <div
+            className="full-width-image full-width-cover margin-top-0"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${
+                image.image.childImageSharp ? image.image.childImageSharp.fluid.src : null
+              })`,
+              backgroundPosition: `center center`,
+              backgroundSize: 'cover'
+            }}
+          >
+            <button type="button" className="bs__arrow">
+              <img src={ arrowDown } alt="Role para baixo" />
+            </button>
+          </div>
         </div>
       )) }
     </Carousel>
