@@ -10,8 +10,8 @@ mainpitch:
 images:
   - image: /img/14.jpg
   - image: /img/_mg_6293.jpg
-  - image: /img/_mg_9792.jpg
-  - image: /img/vitoria-12.jpg
+  - image: /img/bg-home-2.jpg
+  - image: /img/bg-home-1.jpg
   - image: /img/lins-135-.jpg
 testimonials:
   - quote: '"Primeiramente eu achei que seria difícil por não conseguir me soltar.
