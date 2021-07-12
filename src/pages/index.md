@@ -9,7 +9,7 @@ mainpitch:
     technologies and figure out what works and what doesn’t.
 images:
   - image: /img/14.jpg
-  - image: /img/_mg_4903.jpg
+  - image: /img/_mg_6293.jpg
   - image: /img/_mg_9792.jpg
   - image: /img/vitoria-12.jpg
   - image: /img/lins-135-.jpg
