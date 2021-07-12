@@ -2,7 +2,7 @@
 templateKey: faq-page
 path: /faq
 title: F.A.Q
-image: /img/1.jpg
+image: /img/6.jpg
 ---
 ##Você fotografa só em Curitiba?
 
