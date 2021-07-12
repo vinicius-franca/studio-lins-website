@@ -19,15 +19,14 @@ export const FaqPageTemplate = ({ title, content, image, contentComponent }) => 
               </div>
             </div>
             <div className="column is-6">
-              {/* <div className="box notify" style={{
+              <div style={{
                 backgroundImage: `url(${
                   !!image.childImageSharp ? image.childImageSharp.fluid.src : image
                 })`,
-                backgroundSize: 'cover',
                 width:`100%`,
                 height:`100%`,
                 margin: `20px`
-              }}></div> */}
+              }}></div>
             </div>
           </div>
           <div className="columns" style={{ marginTop: '50px' }}>

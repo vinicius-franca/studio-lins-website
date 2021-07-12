@@ -5,8 +5,6 @@ import emailIcon from '../img/email.svg'
 import whatsappIcon from '../img/whatsapp.svg'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
-import linkedin from '../img/social/linkedin.svg'
-import behance from '../img/social/behance.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -43,21 +41,21 @@ const Footer = class extends React.Component {
               </div>
               <div className="column is-4 social has-text-centered">
                 <h4 className="has-text-white-ter is-uppercase">Redes Sociais</h4>
-                <a title="facebook" href="https://www.facebook.com/Studio-Lins-Fotografia-105772138401127">
+                <a title="facebook" target="_blank" href="https://www.facebook.com/Studio-Lins-Fotografia-105772138401127">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: '48px', height: '48px' }}
                   />
                 </a>
-                <a title="instagram" href="https://instagram.com/studiolinsfotografia">
+                <a title="instagram" target="_blank" href="https://instagram.com/studiolinsfotografia">
                   <img
                     src={instagram}
                     alt="Instagram"
                     style={{ width: '48px', height: '48px' }}
                   />
                 </a>
-                <a className="has-text-white-ter" href="https://api.whatsapp.com/send?phone=5548999279696"><img
+                <a className="has-text-white-ter" target="_blank" href="https://api.whatsapp.com/send?phone=5548999279696"><img
                     src={whatsappIcon}
                     alt="Whatsapp"
                     style={{ width: '48px', height: '48px'}}

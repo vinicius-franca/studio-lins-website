@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
   testimonials
 }) => (
   <div>
-    <Carousel showStatus={ false } showThumbs={false} showArrows={false} dynamicHeight={ false }>
+    <Carousel showStatus={ false } autoPlay={ true } showThumbs={false} showArrows={false} dynamicHeight={ false }>
       { images.map((image) => (
         <div key={v4()}>
           <div

@@ -2,6 +2,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
+import logoSimple from '../img/logo-simplify.svg'
 
 const Navbar = class extends React.Component {
 
@@ -73,6 +74,7 @@ const Navbar = class extends React.Component {
           <div className="navbar-brand">
             <Link to="/" className="logo" title="Studio Lins">
               <img src={logo} alt="Studio Lins" />
+              {/* <img class="is-flex-touch is-hidden" src={logoSimple} alt="Studio Lins" /> */}
             </Link>
             {/* Hamburger menu */}
             <div

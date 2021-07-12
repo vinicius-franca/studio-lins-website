@@ -62,9 +62,6 @@ export default class Index extends React.Component {
             <div className="content">
               <div className="columns">
                 <div className="column is-6">
-                  <img src={imgContato} alt="Imagem de um ensaio familiar" className="is-fluid box notify" style={{maxHeight: '850px'}} />
-                </div>
-                <div className="column is-6">
                   <p><strong>Olá! Tudo bem?</strong></p>
                   <p><strong>Que bom que chegou até aqui! Fico feliz em saber que tenham se identificado com o nosso trabalho.</strong></p>
                   <p><strong>Entre em contato através do nosso formulário ou diretamente pelo nosso Whatsapp <a href="https://api.whatsapp.com/send?phone=554199190512">clicando aqui</a>.
@@ -193,6 +190,9 @@ export default class Index extends React.Component {
                       </button> */}
                     </div>
                   </form>
+                </div>                
+                <div className="column is-6">
+                  <img src={imgContato} alt="Imagem de um ensaio familiar" className="is-fluid box notify" style={{maxHeight: '850px'}} />
                 </div>
               </div>
               <div className="columns">

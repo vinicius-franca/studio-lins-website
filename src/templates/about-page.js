@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
               </div>
             </div>
             <div className="column is-6">
-              <div className="box notify" style={{
+              <div style={{
                 backgroundImage: `url(${
                   !!image.childImageSharp ? image.childImageSharp.fluid.src : image
                 })`,
