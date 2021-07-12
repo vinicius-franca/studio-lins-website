@@ -4,9 +4,7 @@ path: /sobre
 title: Sobre Nós
 image: /img/lins-135-.jpg
 ---
-## Fotografia
-
-## é um investimento em suas memórias.
+## A Fotógrafa
 
 <!--StartFragment-->
 
