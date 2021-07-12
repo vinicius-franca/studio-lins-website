@@ -8,7 +8,7 @@ mainpitch:
     This is a digital research laboratory. It’s where we examine new
     technologies and figure out what works and what doesn’t.
 images:
-  - image: /img/14.jpg
+  - image: /img/bg-home-14.jpg
   - image: /img/_mg_6293.jpg
   - image: /img/bg-home-2.jpg
   - image: /img/bg-home-1.jpg
