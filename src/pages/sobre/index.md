@@ -1,10 +1,9 @@
 ---
 templateKey: about-page
 path: /sobre
-title: Sobre Nós
+title: A Fotógrafa
 image: /img/lins-135-.jpg
 ---
-## A Fotógrafa
 
 <!--StartFragment-->
 
