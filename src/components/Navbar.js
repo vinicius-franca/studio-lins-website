@@ -3,6 +3,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
 import logoSimple from '../img/logo-simplify.svg'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Dropdown } from 'react-bootstrap';
+
 
 const Navbar = class extends React.Component {
 
@@ -101,9 +104,21 @@ const Navbar = class extends React.Component {
               {/* <Link className="navbar-item" to="/">
                 Como funciona?
               </Link> */}
-              <Link className="navbar-item" to="/portfolio">
+              {/* <Link className="navbar-item navbar-test" to="/portfolio">
                 Portfólio
-              </Link>
+              </Link> */}
+              <Dropdown className="navbar-custom-dropdown">
+                <Dropdown.Toggle className="navbar-item-dropdown" id="dropdown-basic">
+                  Portfólio
+                </Dropdown.Toggle>
+                <Dropdown.Menu className="navbar-dropdown-menu">
+                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio">TODOS</Link></Dropdown.Item>
+                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio/2021-07-06-gestantes">GESTANTETS</Link></Dropdown.Item>
+                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio/2021-06-18-ensaio-infantil-familia">INFANTIL E FAMÍLIA</Link></Dropdown.Item>
+                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio/2021-06-14-ensaio-casal">CASAIS</Link></Dropdown.Item>
+                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio/2021-07-01-feminino">FEMININO</Link></Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
               <Link className="navbar-item" to="/blog">
                 Blog
               </Link>
