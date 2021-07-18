@@ -34,7 +34,7 @@ export const PortfolioPostTemplate = ({
           <div className="column is-10 is-offset-1">
             <SRLWrapper options={{ buttons : { showDownloadButton: false }, caption: { showCaption: false } }}>
               <Masonry
-                breakpointCols={3}
+                breakpointCols={2}
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column">
                     {photos && photos.length ? (

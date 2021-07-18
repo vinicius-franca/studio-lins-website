@@ -27,7 +27,7 @@ class BlogRoll extends React.Component {
                         />
                         <div className="featured-thumbnail-overlay">
                           <div>
-                            <h3 className="has-text-white is-size-4">{post.frontmatter.title}</h3>
+                            <h3 className="has-text-white is-size-4 upper">{post.frontmatter.title}</h3>
                             <span className="has-text-white is-size-5 is-block">
                               &#8226;  {post.frontmatter.description} &#8226;
                             </span>

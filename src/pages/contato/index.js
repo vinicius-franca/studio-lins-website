@@ -192,7 +192,7 @@ export default class Index extends React.Component {
                   </form>
                 </div>                
                 <div className="column is-6">
-                  <img src={imgContato} alt="Imagem de um ensaio familiar" className="is-fluid box notify" style={{maxHeight: '850px'}} />
+                  <img src={imgContato} alt="Imagem de um ensaio familiar" className="is-fluid box notify no-padding" style={{maxHeight: '850px'}} />
                 </div>
               </div>
               <div className="columns">

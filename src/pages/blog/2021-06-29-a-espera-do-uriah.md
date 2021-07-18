@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: A espera do Uriah
 date: 2021-06-29T04:59:08.905Z
-description: Sessão de Gestante
+description: Sessão Gestante
 featuredpost: true
 featuredimage: /img/7.jpg
 tags: Recém-nascido
