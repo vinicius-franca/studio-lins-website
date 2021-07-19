@@ -15,10 +15,11 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
-      activeClass: 'is-transparent'
+      activeClass: 'is-transparent',
+      isOpen: false
     }
   }
-
+  
 
   toggleHamburger = () => {
     // toggle the active boolean in the state
@@ -39,6 +40,15 @@ const Navbar = class extends React.Component {
       }
     )
   }
+
+  handleOpen = () => {
+    this.setState({ isOpen: true })
+  }
+
+  handleClose = () => {
+     this.setState({ isOpen: false })
+  }
+
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
     const imageHeader = document.querySelector(".full-width-image");
@@ -107,18 +117,18 @@ const Navbar = class extends React.Component {
               {/* <Link className="navbar-item navbar-test" to="/portfolio">
                 Portfólio
               </Link> */}
-              <Dropdown className="navbar-custom-dropdown">
-                <Dropdown.Toggle className="navbar-item-dropdown" id="dropdown-basic">
+              <div className="navbar-custom-dropdown dropdown">
+                <div className="navbar-item-dropdown" id="dropdown-basic">
                   Portfólio
-                </Dropdown.Toggle>
-                <Dropdown.Menu className="navbar-dropdown-menu">
-                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio">TODOS</Link></Dropdown.Item>
-                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio/2021-07-06-gestantes">GESTANTETS</Link></Dropdown.Item>
-                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio/2021-06-18-ensaio-infantil-familia">INFANTIL E FAMÍLIA</Link></Dropdown.Item>
-                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio/2021-06-14-ensaio-casal">CASAIS</Link></Dropdown.Item>
-                  <Dropdown.Item className="navbar-dropdown-item"><Link to="/portfolio/2021-07-01-feminino">FEMININO</Link></Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+                </div>
+                <div className="navbar-dropdown-menu">
+                  <div className="navbar-dropdown-item"><Link to="/portfolio">TODOS</Link></div>
+                  <div className="navbar-dropdown-item"><Link to="/portfolio/2021-07-06-gestantes">GESTANTETS</Link></div>
+                  <div className="navbar-dropdown-item"><Link to="/portfolio/2021-06-18-ensaio-infantil-familia">INFANTIL E FAMÍLIA</Link></div>
+                  <div className="navbar-dropdown-item"><Link to="/portfolio/2021-06-14-ensaio-casal">CASAIS</Link></div>
+                  <div className="navbar-dropdown-item"><Link to="/portfolio/2021-07-01-feminino">FEMININO</Link></div>
+                </div>
+              </div>
               <Link className="navbar-item" to="/blog">
                 Blog
               </Link>

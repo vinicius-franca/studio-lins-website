@@ -82,7 +82,11 @@ h3.with-border__left:after
 .navbar-custom-dropdown
   height: 45px !important
   margin-top: 20px !important
+  cursor: pointer
   display: flex
+
+  &:hover .navbar-dropdown-menu
+    display: block
 
 .navbar-item-dropdown
   font-family:'Poiret One', BlinkMacSystemFont, -apple-system, "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important
@@ -133,6 +137,13 @@ h3.with-border__left:after
 .navbar-dropdown-menu
   background-color: #000 !important
   width: 250px
+  display: none
+  position: absolute
+  inset: 0px auto auto 0px
+  margin: 0px
+  transform: translate(0px, 45px)
+  border-radius: 0 5px 5px 5px
+  padding: 5px 0
 
 // Tag List
 .content .taglist
