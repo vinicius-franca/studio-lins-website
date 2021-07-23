@@ -13,7 +13,7 @@ class CategoryRoute extends React.Component {
           <div className="container content">
             <div className="columns">
               <div className="column is-12">
-                <h3 className="has-text-weight-semibold has-text-centered with-border">
+                <h3 className="has-text-weight-semibold has-text-centered with-border title">
                 {`${category}`}
                 </h3>
               </div>

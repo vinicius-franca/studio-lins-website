@@ -48,7 +48,7 @@ export default class Index extends React.Component {
       <Layout>
         <section className="section" style={{ paddingTop: '100px', minHeight: 'calc(100vh - 82px)'}}>
           <div className="container">
-            <h3 className="has-text-weight-semibold has-text-centered with-border" style={{marginBottom: '50px'}}>Cadastre-se</h3>
+            <h3 className="has-text-weight-semibold has-text-centered with-border title" style={{marginBottom: '50px'}}>Cadastre-se</h3>
             <div className="content">
               <div className="columns">
                 <div className="column is-6">

@@ -20,9 +20,9 @@ export const PortfolioPostTemplate = ({
   /* const PostContent = contentComponent || Content */
 
   return (
-    <section className="section" style={{ marginTop: '70px'}}>
+    <section className="section" style={{ marginTop: '70px', padding: '3rem 0rem'}}>
       {helmet || ''}
-      <div className="container content">
+      <div className="content">
         <div className="columns">
           <div className="column is-12">
             <h3 className="has-text-weight-semibold has-text-centered with-border">

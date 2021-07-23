@@ -26,6 +26,8 @@ Agradeço muito a confiança depositada no meu olhar. É sempre maravilhoso pode
 A vida é um sopro, não deixe de documentar ela! <br>
 Vamos criar memórias afetivas juntos?<br><br>
 
+<div class="blog-post">
+
 ![](/img/1.jpg)
 
 ![](/img/3-2-.jpg)
@@ -65,3 +67,5 @@ Vamos criar memórias afetivas juntos?<br><br>
 ![](/img/16.jpg)
 
 ![](/img/17.jpg)
+
+</div>

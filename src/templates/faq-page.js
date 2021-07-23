@@ -11,7 +11,7 @@ export const FaqPageTemplate = ({ title, content, image, contentComponent }) => 
     <div>
       <section className="section section--gradient" style={{ marginTop: '70px'}}>
         <div className="container">
-          <h3 className="has-text-weight-semibold has-text-centered with-border">{title}</h3>
+          <h3 className="has-text-weight-semibold has-text-centered with-border title">{title}</h3>
           <div className="columns">
             <div className="column is-6">
               <div className="section">

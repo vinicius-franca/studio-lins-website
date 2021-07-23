@@ -14,7 +14,7 @@ class PortfolioRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className="portfolio-list-item" key={post.id}>
               <Link to={post.fields.slug}>
-                <article className={` tile is-child box notification ${
+                <article className={` tile is-child notification ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
                   >
@@ -27,7 +27,7 @@ class PortfolioRoll extends React.Component {
                         />
                         <div className="featured-thumbnail-overlay">
                           <div>
-                            <h3 className="has-text-white is-size-4">{post.frontmatter.title}</h3>
+                            <h3 className="has-text-white is-size-4 upper">{post.frontmatter.title}</h3>
                           </div>
                         </div>
                       </div>

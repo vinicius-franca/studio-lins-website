@@ -54,7 +54,7 @@ export default class Index extends React.Component {
           <div className="container">
             <div className="columns">
               <div className="column is-12">
-                <h3 className="has-text-weight-semibold has-text-centered with-border">
+                <h3 className="has-text-weight-semibold has-text-centered with-border title">
                   Contato
                 </h3>
               </div>
@@ -63,9 +63,9 @@ export default class Index extends React.Component {
               <div className="columns">
                 <div className="column is-6">
                   <p><strong>Olá! Tudo bem?</strong></p>
-                  <p><strong>Que bom que chegou até aqui! Fico feliz em saber que tenham se identificado com o nosso trabalho.</strong></p>
-                  <p><strong>Entre em contato através do nosso formulário ou diretamente pelo nosso Whatsapp <a href="https://api.whatsapp.com/send?phone=554199190512">clicando aqui</a>.
-                  Vamos criar lindas recordações juntos! </strong></p>
+                  <p>Que bom que chegou até aqui! Fico feliz em saber que tenham se identificado com o nosso trabalho.</p>
+                  <p>Entre em contato através do nosso formulário ou diretamente pelo nosso <strong>Whatsapp</strong> <a href="https://api.whatsapp.com/send?phone=554199190512">clicando aqui</a>.
+                  Vamos criar lindas recordações juntos! </p>
                   <form
                     method="POST"
                     netlify-honeypot="bot-field"

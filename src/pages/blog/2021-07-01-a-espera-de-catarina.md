@@ -15,6 +15,7 @@ Ela veio de outra cidade pra visitar uma amiga e ganhou de presente os registros
 **Existe presente melhor que esse?<br><br>**
 
 Dar uma experiência incrível que vai proporcionar algo tão importante na vida dela: memórias afetivas.**<br><br>**
+<div class="blog-post">
 
 ![](/img/_mg_3634.jpg)
 
@@ -47,3 +48,5 @@ Dar uma experiência incrível que vai proporcionar algo tão importante na vida
 ![](/img/vitoria-12.jpg)
 
 ![](/img/vitoria-13.jpg)
+
+</div>

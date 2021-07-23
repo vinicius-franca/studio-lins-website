@@ -3,15 +3,18 @@
 @import "~bulma"
 @import "~bulma/sass/utilities/initial-variables"
 //@import "~bulma/sass/utilities/_all.sass";
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 // Config vars
 $body-background-color: #FFF4EB
 $black: #10130C
 $primary: $black
 
+body
+  font-family: 'Montserrat', sans-serif !important  
+
 h1, h2, h3, h4, h5
-  font-family:'Poiret One', BlinkMacSystemFont, -apple-system, "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important
+  font-family: 'Montserrat', sans-serif !important
   font-weight: 600
 
 h3.with-border
@@ -39,7 +42,7 @@ h3.with-border__left:after
 .navbar
   transition: background-color ease .3s
   text-transform: uppercase
-  font-family:'Poiret One', BlinkMacSystemFont, -apple-system, "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important
+  font-family: 'Montserrat', sans-serif !important
   font-weight: 600
 
 .navbar.is-transparent
@@ -89,13 +92,15 @@ h3.with-border__left:after
     display: block
 
 .navbar-item-dropdown
-  font-family:'Poiret One', BlinkMacSystemFont, -apple-system, "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important
+  font-family: 'Montserrat', sans-serif !important
   color: $primary-invert !important
   text-transform: uppercase
   font-weight: normal !important
   border: 0 !important
   padding: 0.5rem 1.5rem !important
   background-color: transparent !important
+  display: flex
+  align-items: center
 
   &:after
     margin-left: 0 !important
@@ -338,7 +343,8 @@ footer.footer
   display: flex
 
 .blog-list-item .notification
-  padding: 0.5rem
+  padding: 3px
+  background-color: #fff
 
 // portfolio roll
 .portfolio-list
@@ -350,7 +356,8 @@ footer.footer
   position: relative
 
 .portfolio-list-item .notification
-  padding: 0.5rem
+  padding: 3px
+  background-color: #fff
 
 .portfolio-list-item .featured-thumbnail
   flex-basis: 100%
@@ -459,3 +466,15 @@ footer.footer
 
 .no-padding
   padding: 0
+
+.title
+  margin-top: 60px
+  margin-bottom: 60px !important
+
+.pb-button
+  display: flex
+  justify-content: center
+  align-items: center
+
+.blog-post > p
+  padding: 3px 0
