@@ -19,14 +19,7 @@ export const FaqPageTemplate = ({ title, content, image, contentComponent }) => 
               </div>
             </div>
             <div className="column is-6">
-              <div style={{
-                backgroundImage: `url(${
-                  !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-                })`,
-                width:`100%`,
-                height:`100%`,
-                margin: `20px`
-              }}></div>
+              <img src={ !!image.childImageSharp ? image.childImageSharp.fluid.src : image }  style={{ marginTop: '50px' }}/>
             </div>
           </div>
           <div className="columns" style={{ marginTop: '50px' }}>

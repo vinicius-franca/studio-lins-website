@@ -2,9 +2,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
-import logoSimple from '../img/logo-simplify.svg'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Dropdown } from 'react-bootstrap';
 
 
 const Navbar = class extends React.Component {

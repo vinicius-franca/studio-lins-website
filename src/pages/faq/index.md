@@ -2,7 +2,7 @@
 templateKey: faq-page
 path: /faq
 title: F.A.Q
-image: /img/6.jpg
+image: /img/faq.jpg
 ---
 ##Você fotografa só em Curitiba?
 
@@ -14,9 +14,9 @@ Solicito pagamento de um sinal (20% do investimento total do pacote) para reserv
 
 ##Você pode me dar um desconto?
 
-Com certeza! Se solicitar a contratação de mais de um pacote ganha um descontinho. <br>\
-E também se você fizer alguma doação (pode ser comida, roupas, calçados, produtos de higiene, fraldas geriátricas, material escolar, etc...) você ganha descontos de até R$50,00 reais nos pacotes. <br><br>\
-Essas doações são levadas para a ONG Inpoderi, ela atende pessoas com deficiência que moram nas periferias. Trabalho maravilhoso! Acesse o site para conhecer <https://inpoderi.org/> <br><br>
+Com certeza! Se solicitar a contratação de mais de um pacote ganha um descontinho. <br>
+E também se você fizer alguma doação (pode ser comida, roupas, calçados, produtos de higiene, fraldas geriátricas, material escolar, etc...) você ganha descontos de até R$50,00 reais nos pacotes.
+Essas doações são levadas para a ONG Inpoderi, ela atende pessoas com deficiência que moram nas periferias. Trabalho maravilhoso! Acesse o site para conhecer <https://inpoderi.org/> <br>
 
 ##Qual a forma de pagamento?
 

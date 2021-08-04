@@ -2,9 +2,8 @@
 import React from 'react'
 import { SRLWrapper } from "simple-react-lightbox";
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Masonry from 'react-masonry-css'
 
@@ -25,7 +24,7 @@ export const PortfolioPostTemplate = ({
       <div className="content">
         <div className="columns">
           <div className="column is-12">
-            <h3 className="has-text-weight-semibold has-text-centered with-border">
+            <h3 className="has-text-weight-semibold has-text-centered with-border title">
             { title }
             </h3>
           </div>

@@ -26,7 +26,7 @@ export const AboutPageTemplate = ({ title, content, image, contentComponent }) =
                 backgroundSize: 'cover',
                 width:`100%`,
                 height:`100%`,
-                margin: `20px`
+                margin: `50px`
               }}></div>
             </div>
           </div>

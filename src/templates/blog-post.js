@@ -22,7 +22,7 @@ export const BlogPostTemplate = ({
         {helmet || ''}
         <div className="container">
           <h3 className="has-text-weight-semibold has-text-centered with-border">{title}</h3>
-          <h5 className="has-text-weight-semibold has-text-centered mb-4">{description}</h5>
+          <h5 className="has-text-weight-semibold has-text-centered mb-5">{description}</h5>
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <PostContent content={content} />

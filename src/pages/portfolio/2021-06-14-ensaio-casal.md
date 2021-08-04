@@ -3,26 +3,27 @@ templateKey: portfolio-post
 title: Casal
 date: 2021-06-14T21:59:41.685Z
 description: Ensaios de casais realizados pelo studio
-featuredimage: /img/_mg_1419.jpg
+featuredimage: /img/casal/casal21.jpg
 categories:
   - Casal
 photos:
-  - image: /img/_mg_0045.jpg
-  - image: /img/_mg_1343.jpg
-  - image: /img/_mg_1408.jpg
-  - image: /img/_mg_1419.jpg
-  - image: /img/_mg_1464.jpg
-  - image: /img/_mg_4742.jpg
-  - image: /img/_mg_4747.jpg
-  - image: /img/_mg_4778.jpg
-  - image: /img/_mg_4838.jpg
-  - image: /img/_mg_5160.jpg
-  - image: /img/_mg_5614.jpg
-  - image: /img/_mg_8529.jpg
-  - image: /img/_mg_8692.jpg
-  - image: /img/_mg_9744.jpg
-  - image: /img/_mg_9815.jpg
-  - image: /img/_mg_9826.jpg
-  - image: /img/_mg_9870.jpg
+- image: /img/casal/casal1.jpg
+- image: /img/casal/casal10.jpg
+- image: /img/casal/casal11.jpg
+- image: /img/casal/casal13.jpg
+- image: /img/casal/casal14.jpg
+- image: /img/casal/casal16.jpg
+- image: /img/casal/casal19.jpg
+- image: /img/casal/casal2.jpg
+- image: /img/casal/casal21.jpg
+- image: /img/casal/casal22.jpg
+- image: /img/casal/casal23.jpg
+- image: /img/casal/casal24.jpg
+- image: /img/casal/casal3.jpg
+- image: /img/casal/casal4.jpg
+- image: /img/casal/casal5.jpg
+- image: /img/casal/casal6.jpg
+- image: /img/casal/casal8.jpg
+- image: /img/casal/casal9.jpg
 ---
-\--
+<-->

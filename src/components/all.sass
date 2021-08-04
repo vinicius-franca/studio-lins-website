@@ -195,10 +195,11 @@ h3.with-border__left:after
   width: 100vw
   height: 100vh
   position: relative
+  background-repeat: no-repeat
   left: 50%
   right: 50%
   margin: 0 -50vw
-  background-size: cover
+  background-size: contain
   display: flex
   justify-content: center
   align-items: center
@@ -206,7 +207,8 @@ h3.with-border__left:after
 .full-width-image
   width: 100vw
   height: 100vh
-  background-size: cover
+  background-size: contain
+  background-repeat: no-repeat
   background-position: bottom
   display: flex
   justify-content: center
@@ -249,6 +251,7 @@ h3.with-border__left:after
 
 .testimonials
   margin-top: 15px
+  width: 100%
 
   .carousel
     height: 100%
@@ -471,10 +474,25 @@ footer.footer
   margin-top: 60px
   margin-bottom: 60px !important
 
-.pb-button
-  display: flex
-  justify-content: center
-  align-items: center
+.custom-button
+  button
+    padding: 0 !important
 
 .blog-post > p
   padding: 3px 0
+
+.testimonials button::before
+  border-right-color: black !important
+  border-left-color: black !important
+
+.testimonials button:first-child
+  background: transparent !important
+
+.testimonials button:last-child
+  background: transparent !important
+
+.testimonials > div
+  padding: 0 30px
+
+.is-rounded
+  height: 100%

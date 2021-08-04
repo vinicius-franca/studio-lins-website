@@ -8,9 +8,8 @@ import { Carousel } from 'react-responsive-carousel';
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import BlogRollLimited from '../components/BlogRollLimited'
 import Testimonials from '../components/Testimonials'
-import arrowDown from '../img/arrow-down.svg'
 
 import imgInstagram from '../img/instagram.png'
 
@@ -21,30 +20,17 @@ export const IndexPageTemplate = ({
   testimonials
 }) => (
   <div>
-    <Carousel showStatus={ false } autoPlay={ true } showThumbs={false} showArrows={false} dynamicHeight={ false }>
+    <Carousel showStatus={ false } infiniteLoop={ true } showIndicators={ false } autoPlay={ true } showThumbs={false} showArrows={true} dynamicHeight={ false } stopOnHover={ false }>
       { images.map((image) => (
         <div key={v4()}>
-          <div
-            className="full-width-image full-width-cover margin-top-0"
-            style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${
-                image.image.childImageSharp ? image.image.childImageSharp.fluid.src : null
-              })`,
-              backgroundPosition: `center center`,
-              backgroundSize: 'cover'
-            }}
-          >
-            <button type="button" className="bs__arrow">
-              <img src={ arrowDown } alt="Role para baixo" />
-            </button>
-          </div>
+          <img src={ image.image.childImageSharp ? image.image.childImageSharp.fluid.src : null }  style={{ marginTop: '80px' ,width: '100%' ,backgroundPosition: `center center`, backgroundSize: 'cover' }}/>
         </div>
       )) }
     </Carousel>
     <section className="section section--gradient portfolio">
       <div className="columns">
         <div className="column is-12">
-          <h3 className="has-text-weight-semibold has-text-centered with-border">
+          <h3 className="has-text-weight-semibold has-text-centered with-border title">
             Portfólio
           </h3>
         </div>
@@ -74,7 +60,7 @@ export const IndexPageTemplate = ({
               Blog
             </h3>
             <div className="column is-12">
-              <BlogRoll />
+              <BlogRollLimited />
             </div>
             <div className="column is-12 has-text-centered">
               <Link className="btn" to="/blog">

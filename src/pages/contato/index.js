@@ -3,7 +3,7 @@ import React from 'react'
 import ProgressButton from 'react-progress-button'
 import Layout from '../../components/Layout'
 
-import imgContato from '../../img/bg-contato.jpg'
+import imgContato from '../../../static/img/contato.jpg'
 
 function encode(data) {
   return Object.keys(data)
@@ -63,9 +63,9 @@ export default class Index extends React.Component {
               <div className="columns">
                 <div className="column is-6">
                   <p><strong>Olá! Tudo bem?</strong></p>
-                  <p>Que bom que chegou até aqui! Fico feliz em saber que tenham se identificado com o nosso trabalho.</p>
-                  <p>Entre em contato através do nosso formulário ou diretamente pelo nosso <strong>Whatsapp</strong> <a href="https://api.whatsapp.com/send?phone=554199190512">clicando aqui</a>.
-                  Vamos criar lindas recordações juntos! </p>
+                  <p>Que bom que chegou até aqui! Fico feliz em saber que tenham se identificado com o nosso trabalho.
+                  Entre em contato através do nosso formulário ou diretamente pelo nosso <strong>Whatsapp</strong> <a href="https://api.whatsapp.com/send?phone=554199190512">clicando aqui</a>.
+                  Vamos criar lindas recordações juntos!</p>
                   <form
                     method="POST"
                     netlify-honeypot="bot-field"
@@ -182,7 +182,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <ProgressButton type={"submit"} state={this.state.buttonState}>
+                      <ProgressButton type={"submit"} state={this.state.buttonState} className="custom-button">
                         Enviar
                       </ProgressButton>
                       {/* <button className="btn" type="submit">
@@ -192,12 +192,7 @@ export default class Index extends React.Component {
                   </form>
                 </div>                
                 <div className="column is-6">
-                  <img src={imgContato} alt="Imagem de um ensaio familiar" className="is-fluid box notify no-padding" style={{maxHeight: '850px'}} />
-                </div>
-              </div>
-              <div className="columns">
-                <div className="column is-12 has-text-centered">
-                  <h2 className="mt-3 is-size-4">Quer viver essa experiência com a gente? Entre em contato <a target="_blank"  rel="noreferrer" href="https://api.whatsapp.com/send?phone=554199190512">AQUI!</a></h2>
+                  <img src={imgContato} alt="Imagem de um ensaio familiar" className="is-fluid notify no-padding" style={{maxHeight: '850px'}} />
                 </div>
               </div>
             </div>
