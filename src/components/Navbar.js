@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import logoSimple from '../img/logo-simplify.svg'
 
 
 const Navbar = class extends React.Component {
@@ -49,7 +50,7 @@ const Navbar = class extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    const imageHeader = document.querySelector(".full-width-image");
+    const imageHeader = document.querySelector(".header-transparent");
     if (!imageHeader) {
       document.querySelector(".navbar").className = "navbar is-fixed-top  is-primary";
     }
@@ -61,7 +62,7 @@ const Navbar = class extends React.Component {
 
   handleScroll = () => {
     window.addEventListener("scroll", this.handleScroll);
-    const imageHeader = document.querySelector(".full-width-image");
+    const imageHeader = document.querySelector(".header-transparent");
 
     if(!imageHeader) {
       document.querySelector(".navbar").className = "navbar is-fixed-top  is-primary";

@@ -11,7 +11,11 @@ import Features from '../components/Features'
 import BlogRollLimited from '../components/BlogRollLimited'
 import Testimonials from '../components/Testimonials'
 
-import imgInstagram from '../img/instagram.png'
+import imgInstagram1 from '../../static/img/instagram/insta1.jpg'
+import imgInstagram2 from '../../static/img/instagram/insta2.jpg'
+import imgInstagram3 from '../../static/img/instagram/insta3.jpg'
+import imgInstagram4 from '../../static/img/instagram/insta4.jpg'
+import imgInstagram5 from '../../static/img/instagram/insta5.jpg'
 
 export const IndexPageTemplate = ({
   images,
@@ -19,11 +23,11 @@ export const IndexPageTemplate = ({
   intro,
   testimonials
 }) => (
-  <div>
+  <div className="header-transparent">
     <Carousel showStatus={ false } infiniteLoop={ true } showIndicators={ false } autoPlay={ true } showThumbs={false} showArrows={true} dynamicHeight={ false } stopOnHover={ false }>
       { images.map((image) => (
         <div key={v4()}>
-          <img src={ image.image.childImageSharp ? image.image.childImageSharp.fluid.src : null }  style={{ marginTop: '80px' ,width: '100%' ,backgroundPosition: `center center`, backgroundSize: 'cover' }}/>
+          <img src={ image.image.childImageSharp ? image.image.childImageSharp.fluid.src : null }  style={{ width: '100%' ,backgroundPosition: `center center`, backgroundSize: 'cover' }}/>
         </div>
       )) }
     </Carousel>
@@ -78,9 +82,21 @@ export const IndexPageTemplate = ({
             <h3 className="has-text-weight-semibold with-border  has-text-centered">
               Instagram
             </h3>
-            <div className="column is-12">
-              <a href="https://www.instagram.com/studiolinsfotografia/" target="_blank">
-                <img src={imgInstagram} alt="instagram feed" className="is-fluid" style={{width: '100%'}} />
+            <div className="instagram">
+              <a href="https://www.instagram.com/p/CRkE4gulIp-/" target="_blank">
+                <img src={imgInstagram4} alt="instagram feed" className="instagram-img" />
+              </a>
+              <a href="https://www.instagram.com/p/CP9JDr7Fpae/" target="_blank">
+                <img src={imgInstagram1} alt="instagram feed" className="instagram-img"/>
+              </a>
+              <a href="https://www.instagram.com/p/CMNg75XFe7H/" target="_blank">
+                <img src={imgInstagram5} alt="instagram feed" className="instagram-img"/>
+              </a>
+              <a href="https://www.instagram.com/p/CLuanrLFNMB/" target="_blank">
+                <img src={imgInstagram3} alt="instagram feed" className="instagram-img"/>
+              </a>
+              <a href="https://www.instagram.com/p/CRSAlNglaNC/" target="_blank">
+                <img src={imgInstagram2} alt="instagram feed" className="instagram-img"/>
               </a>
             </div>
           </div>
