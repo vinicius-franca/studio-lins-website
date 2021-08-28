@@ -60,7 +60,7 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="columns">
           <div className="column is-12">
-            <h3 className="has-text-weight-semibold with-border  has-text-centered">
+            <h3 className="has-text-weight-semibold with-border  has-text-centered title">
               Blog
             </h3>
             <div className="column is-12">
@@ -75,15 +75,15 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section">
-      <div className="container-fluid">
+    <section className="section" style={{ padding: "3rem 0" }} >
+      <div className="container-fluid" style={{ padding: "0" }}>
         <div className="columns">
           <div className="column is-12">
-            <h3 className="has-text-weight-semibold with-border  has-text-centered">
+            <h3 className="has-text-weight-semibold with-border  has-text-centered title">
               Instagram
             </h3>
             <div className="instagram">
-              <a href="https://www.instagram.com/p/CRkE4gulIp-/" target="_blank">
+              <a href="https://www.instagram.com/p/COQ_2GQlyv3/" target="_blank">
                 <img src={imgInstagram4} alt="instagram feed" className="instagram-img" />
               </a>
               <a href="https://www.instagram.com/p/CP9JDr7Fpae/" target="_blank">
