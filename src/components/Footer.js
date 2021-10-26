@@ -24,7 +24,7 @@ const Footer = class extends React.Component {
                     /> contato@studiolinsfotografia.com.br</a>
                   </div>
                   <div className="footer-mq">
-                    <a className="is-block has-text-white-ter" href="https://api.whatsapp.com/send?phone=5548999279696"><img
+                    <a className="is-block has-text-white-ter" href="https://api.whatsapp.com/send?phone=554199950-6119"><img
                       src={whatsappIcon}
                       alt="Phone Icon"
                       style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
@@ -52,14 +52,14 @@ const Footer = class extends React.Component {
                     style={{ width: '48px', height: '48px' }}
                   />
                 </a>
-                <a title="instagram" target="_blank" href="https://instagram.com/studiolinsfotografia">
+                <a title="instagram" target="_blank" href="https://instagram.com/studiolinsfotografiaa">
                   <img
                     src={instagram}
                     alt="Instagram"
                     style={{ width: '48px', height: '48px' }}
                   />
                 </a>
-                <a className="has-text-white-ter" target="_blank" href="https://api.whatsapp.com/send?phone=5548999279696"><img
+                <a className="has-text-white-ter" target="_blank" href="https://api.whatsapp.com/send?phone=554199950-6119"><img
                     src={whatsappIcon}
                     alt="Whatsapp"
                     style={{ width: '48px', height: '48px'}}
