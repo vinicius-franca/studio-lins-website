@@ -39,7 +39,14 @@ export default class Index extends React.Component {
         ...this.state
       }),
     })
-    .then(() => this.setState({buttonState: 'success'}))
+    .then(() => 
+      {
+        this.setState({buttonState: 'success'});
+        setTimeout(() => {
+          window.location.href = "http://www.studiolinsfotografia.com.br";
+        }, 1000);
+      }
+    )
     .catch(error => {
       console.log(error);
       this.setState({buttonState: 'error'})

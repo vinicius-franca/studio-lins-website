@@ -14,18 +14,22 @@ const Footer = class extends React.Component {
             <div className="columns">
               <div className="column is-4">
                 <section>
-                  <h4 className="has-text-white-ter is-uppercase mb-4">Contato</h4>
-                  <a className="is-block has-text-white-ter mb-4" href="mailto:contato@studiolinsfotografia.com.br">
-                    <img
-                    src={emailIcon}
-                    alt="Mail Icon"
-                    style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
-                  /> contato@studiolinsfotografia.com.br</a>
-                  <a className="is-block has-text-white-ter" href="https://api.whatsapp.com/send?phone=5548999279696"><img
-                    src={whatsappIcon}
-                    alt="Phone Icon"
-                    style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
-                  /> (48) 99927-9696</a>
+                  <h4 className="has-text-white-ter is-uppercase footer-mq">Contato</h4>
+                  <div className="footer-mq">
+                    <a className="is-block has-text-white-ter" href="mailto:contato@studiolinsfotografia.com.br">
+                      <img
+                      src={emailIcon}
+                      alt="Mail Icon"
+                      style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
+                    /> contato@studiolinsfotografia.com.br</a>
+                  </div>
+                  <div className="footer-mq">
+                    <a className="is-block has-text-white-ter" href="https://api.whatsapp.com/send?phone=5548999279696"><img
+                      src={whatsappIcon}
+                      alt="Phone Icon"
+                      style={{ width: '18px', height: '18px', margin: '4px 8px 0 0', float: 'left' }}
+                    /> (41) 99950-6119</a>
+                  </div>
                 </section>
               </div>
               <div className="column is-4">

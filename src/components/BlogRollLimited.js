@@ -28,8 +28,8 @@ class BlogRollLimited extends React.Component {
                         />
                         <div className="featured-thumbnail-overlay">
                           <div>
-                            <h3 className="has-text-white is-size-4 upper">{post.frontmatter.title}</h3>
-                            <span className="has-text-white is-size-5 is-block">
+                            <h3 className="has-text-white is-size-4 upper blog-mq-big">{post.frontmatter.title}</h3>
+                            <span className="has-text-white is-size-5 is-block blog-mq-small">
                               {post.frontmatter.description}
                             </span>
                           </div>

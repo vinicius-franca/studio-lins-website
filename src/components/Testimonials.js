@@ -9,8 +9,8 @@ import { Carousel } from 'react-responsive-carousel';
 const Testimonials = ({ testimonials }) => (
   <Carousel showStatus={ false } infiniteLoop={ true } showIndicators={ false } autoPlay={ true } showThumbs={false} showArrows={true} dynamicHeight={ false } className="testimonials">
     {testimonials.map((testimonial) => (
-        <article key={v4()} className="is-flex is-flex-direction-row is-justify-content-center is-align-content-center is-flex-wrap-nowrap">
-          <div>
+        <article key={v4()} className="is-flex is-flex-direction-row is-justify-content-center is-align-content-center is-flex-wrap-nowrap testimonials-mq">
+          <div className="testimonials-photo-mq">
             {testimonial.image ? (
               <div className="image is-circle is-128x128">
                 <PreviewCompatibleImage
@@ -20,7 +20,7 @@ const Testimonials = ({ testimonials }) => (
             ) : null}
           </div>
           <div className="has-text-left">
-            <p className="is-size-4">{testimonial.quote}</p>
+            <p className="is-size-4 testimonials-text">{testimonial.quote}</p>
             <br />
             <strong> – {testimonial.author}</strong>
           </div>

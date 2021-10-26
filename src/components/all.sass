@@ -83,6 +83,8 @@ h3.with-border__left:after
   width: 165px
 
 .navbar-custom-dropdown
+  display: flex
+  justify-content: center
   height: 45px !important
   margin-top: 20px !important
   cursor: pointer
@@ -509,3 +511,36 @@ footer.footer
 
 .instagram-img 
   width: 100%
+
+.footer-mq
+  white-space: nowrap
+
+@media screen and (min-width: 300px) and (max-width: 1000px)
+  .footer-mq
+    display: flex
+    justify-content: center
+
+@media screen and (min-width: 300px) and (max-width: 1000px)
+  .testimonials-photo-mq
+    display: flex
+    justify-content: center
+    margin: 40px 0 20px 0
+
+@media screen and (min-width: 300px) and (max-width: 1000px)
+  .testimonials-mq
+    flex-flow: column !important
+
+@media screen and (min-width: 300px) and (max-width: 1000px)
+  .featured-thumbnail-overlay
+    opacity: 1 !important
+    transform: translateY(0) !important
+
+@media screen and (min-width: 300px) and (max-width: 1000px)
+  .testimonials-text
+    font-size: 1.25rem !important
+
+@media screen and (min-width: 300px) and (max-width: 1000px)
+  .blog-mq-big
+    font-size: 1.25rem !important
+  .blog-mq-small
+    font-size: 1rem !important
