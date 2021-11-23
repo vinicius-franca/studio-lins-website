@@ -19,13 +19,21 @@ import imgInstagram5 from '../../static/img/instagram/insta5.jpg'
 
 export const IndexPageTemplate = ({
   images,
+  imagesVertical,
   heading,
   intro,
   testimonials
 }) => (
   <div className="header-transparent">
-    <Carousel showStatus={ false } infiniteLoop={ true } showIndicators={ false } autoPlay={ true } showThumbs={false} showArrows={true} dynamicHeight={ false } stopOnHover={ false }>
+    <Carousel showStatus={ false } infiniteLoop={ true } showIndicators={ false } autoPlay={ true } showThumbs={false} showArrows={true} dynamicHeight={ false } stopOnHover={ false } className="carousel-desktop">
       { images.map((image) => (
+        <div key={v4()}>
+          <img src={ image.image.childImageSharp ? image.image.childImageSharp.fluid.src : null }  style={{ width: '100%' ,backgroundPosition: `center center`, backgroundSize: 'cover' }}/>
+        </div>
+      )) }
+    </Carousel>
+    <Carousel showStatus={ false } infiniteLoop={ true } showIndicators={ false } autoPlay={ true } showThumbs={false} showArrows={true} dynamicHeight={ false } stopOnHover={ false } className="carousel-mobile">
+      { imagesVertical.map((image) => (
         <div key={v4()}>
           <img src={ image.image.childImageSharp ? image.image.childImageSharp.fluid.src : null }  style={{ width: '100%' ,backgroundPosition: `center center`, backgroundSize: 'cover' }}/>
         </div>
@@ -108,6 +116,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   images: PropTypes.array,
+  imagesVertical: PropTypes.array,
   intro: PropTypes.object,
   testimonials: PropTypes.array,
 }
@@ -119,6 +128,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         images={frontmatter.images}
+        imagesVertical={frontmatter.imagesVertical}
         intro={frontmatter.intro}
         testimonials={frontmatter.testimonials}
       />
@@ -141,6 +151,15 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         images {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1920, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        imagesVertical {
           image {
             childImageSharp {
               fluid(maxWidth: 1920, quality: 100) {

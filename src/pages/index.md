@@ -12,6 +12,11 @@ images:
   - image: /img/home/segunda.jpg
   - image: /img/home/terceira.jpg
   - image: /img/home/quarta.jpg
+imagesVertical:
+  - image: /img/home/v-primeira.jpg
+  - image: /img/home/v-segunda.jpg
+  - image: /img/home/v-terceira.jpg
+  - image: /img/home/v-quarta.jpg
 testimonials:
   - quote: '"Primeiramente eu achei que seria difícil por não conseguir me soltar.
       Mas você me deixou a vontade, e me ajudou muito. Por fim, eu achei
